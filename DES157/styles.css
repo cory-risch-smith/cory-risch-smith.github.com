@@ -1,8 +1,7 @@
 .container {
+  height: 100vh;
   background: #94b9c1;
   color: #486575;
-  /* max-width: 1200px;
-  min-width: 800px; */
 }
 
 body {
@@ -33,13 +32,13 @@ header > h2 {
   display: flex;
   width: 800px;
   height: 250px;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 #banner:hover {
   background-image: url('../images/donner.jpg');
-  transform: perspective(100px) rotateY(360deg);
-  transition: all 1.5s ease;
+  /* transform: perspective(100px) rotateY(360deg);
+  transition: all 1.5s ease; */
 }
 
 .banner_item1 {
@@ -104,9 +103,10 @@ main > section > ul > a > li:hover {
 }
 
 footer {
-  margin-top: 50px;
+  display: flex;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 footer > p > a {
