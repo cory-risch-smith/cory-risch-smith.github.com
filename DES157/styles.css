@@ -1,7 +1,7 @@
 .container {
   height: 100%;
-  background: #b5d9e1;
-  color: #253f4d;
+  background: #95bbbf;
+  color: #26414b;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  margin: 50px 0;
+  margin: 65px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,7 +25,7 @@ header > h1 {
 }
 
 header > h2 {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   display: flex;
   flex: 100%;
   flex-wrap: wrap;
@@ -36,7 +36,7 @@ header > h2 {
   display: flex;
   width: 800px;
   height: 250px;
-  margin: 30px 0;
+  margin: 40px 0;
 }
 
 #banner:hover {
@@ -48,7 +48,7 @@ header > h2 {
 .banner_item1 {
   width: 100%;
   height: 100%;
-  background-color: thistle;
+  background-color: #5d848c;
   transform: perspective() rotateY(45deg);
 }
 
@@ -61,7 +61,7 @@ header > h2 {
 .banner_item2 {
   height: 100%;
   width: 100%;
-  background-color: steelblue;
+  background-color: #88b5bf;
   transform: perspective() rotateY(45deg);
 }
 
@@ -74,7 +74,7 @@ header > h2 {
 .banner_item3 {
   height: 100%;
   width: 100%;
-  background-color: whitesmoke;
+  background-color: #b0d5d9;
   transform: perspective() rotateY(45deg);
 }
 
@@ -85,36 +85,49 @@ header > h2 {
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   flex: auto;
-  justify-content: space-evenly;
+  justify-content: center;
   flex: 100%;
 }
 
 main > section {
   border-radius: 15px;
-  background: #253f4d;
-  color: #b5d9e1;
-  padding: 10px 30px;
+  background: #26414b;
+  color: #cae6ea;
+  padding: 10px 35px;
   margin: 0 15px;
   text-align: center;
 }
 
 main > section > ul {
-  margin-left: 0;
+  display: block;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   padding-inline-start: 0;
 }
 
 main > section > ul > a {
   margin: 0 10px;
+  padding: 10px 0;
   text-decoration: none;
-  color: #b5d9e1;
+  color: #8daab0;
+}
+main > section > ul > a > li {
+  display: block;
 }
 
 main > section > ul > a > li:hover {
-  color: white;
+  display: block;
+  flex: 1;
+  margin: 0;
+  border-radius: 15px;
+  background-color: #95bbbf;
+  max-width: 100%;
+  color: #26414b;
 }
 
 footer {
@@ -126,11 +139,11 @@ footer {
 
 footer > p > a {
   text-decoration: none;
-  color: #486575;
+  color: #26414b;
 }
 
 footer > p > a:hover {
-  color: white;
+  color: #b0d5d9;
 }
 
 @media (min-width: 800px) {
