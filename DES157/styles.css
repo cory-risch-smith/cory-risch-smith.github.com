@@ -1,14 +1,17 @@
 .container {
-  height: 100vh;
-  background: #94b9c1;
-  color: #486575;
+  height: 100%;
+  background: #b5d9e1;
+  color: #253f4d;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
 }
 
 header {
+  margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -22,6 +25,7 @@ header > h1 {
 }
 
 header > h2 {
+  margin-bottom: 50px;
   display: flex;
   flex: 100%;
   flex-wrap: wrap;
@@ -81,10 +85,20 @@ header > h2 {
 }
 
 main {
+  max-width: 1000px;
   display: flex;
   flex: auto;
   justify-content: space-evenly;
   flex: 100%;
+}
+
+main > section {
+  border-radius: 15px;
+  background: #253f4d;
+  color: #b5d9e1;
+  padding: 10px 30px;
+  margin: 0 15px;
+  text-align: center;
 }
 
 main > section > ul {
@@ -94,8 +108,9 @@ main > section > ul {
 }
 
 main > section > ul > a {
+  margin: 0 10px;
   text-decoration: none;
-  color: #486575;
+  color: #b5d9e1;
 }
 
 main > section > ul > a > li:hover {
@@ -104,7 +119,7 @@ main > section > ul > a > li:hover {
 
 footer {
   display: flex;
-  display: flex;
+  flex: 100%;
   justify-content: center;
   margin-top: 30px;
 }
@@ -118,7 +133,7 @@ footer > p > a:hover {
   color: white;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .container {
     display: flex;
     flex: 1;
