@@ -93,10 +93,10 @@ main {
 }
 
 main > section {
+  width: 400px;
   border-radius: 15px;
   background: #26414b;
   color: #cae6ea;
-  padding: 10px 35px;
   margin: 0 15px;
   text-align: center;
 }
@@ -104,29 +104,28 @@ main > section {
 main > section > ul {
   display: block;
   line-height: 35px;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
   padding-inline-start: 0;
 }
 
 main > section > ul > a {
   margin: 0 10px;
-  padding: 10px 0;
+  padding: 30px 0;
   text-decoration: none;
   color: #8daab0;
 }
-main > section > ul > a > li {
+main > section > ul > li > a {
+  padding: 20px 0;
+  color: #8daab0;
+  text-decoration: none;
   display: block;
+  width: 100%;
 }
 
-main > section > ul > a > li:hover {
+main > section > ul > li > a:hover {
   display: block;
-  flex: 1;
-  margin: 0;
-  border-radius: 15px;
+
   background-color: #95bbbf;
-  max-width: 100%;
   color: #26414b;
 }
 
@@ -134,7 +133,7 @@ footer {
   display: flex;
   flex: 100%;
   justify-content: center;
-  margin-top: 30px;
+  margin: 100px 0;
 }
 
 footer > p > a {
