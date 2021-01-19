@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exp: Dom</title>
+  </head>
+  <body>
+    <script>
+      // My program is a spin off of the examples we used in the JS functions Challenges 10-16. Instead of console logging the greeting to the user and the question of the random food offering, I decided to insert an H! and H2 with the corresponding greeting and offering into the body of the document so the user could see the response rather than it hiding out in the console.
+
+      //Created global variable to be used throught out that collects the user name.
+      let userName = prompt('Please enter your first name:');
+
+      //   Function is called and passes users name into the function, creates h1, attaches greeting to h1, then returns it as an h1 to be placed in the body of the document.
+
+      function greeting(response) {
+        let heading = document.createElement('h1');
+        let text = document.createTextNode(
+          `Hello, ${response}! How are you today?`
+        );
+        heading.appendChild(text);
+        let userGreeting = document.body.appendChild(heading);
+
+        return userGreeting;
+      }
+
+      greeting(userName);
+
+      //   created a foods array.
+
+      let foods = ['pizza', 'chili', 'chicken', 'sardines'];
+
+      //   function that creates a random number
+
+      function randomInt(min, max) {
+        return Math.floor((max - min + 1) * Math.random()) + min;
+      }
+
+      //   Practiced using an arrow function to pass through the username and a gift, an item from the food array, by creating an h2 and appending a response with the users name to a text node, attaching the text node to the h2 and embedding the h2 in the body of the HTML document.
+      let hospitality = (userName, gift) => {
+        let heading = document.createElement('h2');
+        let text = document.createTextNode(
+          `${userName}, would you like to eat some ${
+            foods[randomInt(0, foods.length - 1)]
+          }?`
+        );
+        heading.appendChild(text);
+        let userGreeting = document.body.appendChild(heading);
+
+        return userGreeting;
+      };
+
+      //   calls function and passes through the foods array and userName to be used in the function.
+
+      hospitality(userName, foods);
+    </script>
+  </body>
+</html>
