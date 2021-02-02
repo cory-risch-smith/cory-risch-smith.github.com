@@ -14,6 +14,12 @@
   opacity: 1;
 }
 
+img {
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 0 150px;
+}
+
 /* Overlay Styling */
 
 .overlay {

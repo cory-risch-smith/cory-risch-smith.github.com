@@ -13,6 +13,15 @@
   //   });
   // }
 
+  const welcomeScreen = document.querySelector('.welcome');
+  welcomeScreen.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.getElementById('welcome').className = 'overlay hidden';
+
+    document.getElementById('overlayOne').className = 'overlay showing';
+  });
+
   // Page 1
   const nextBtnOne = document.querySelector('.nextOne');
 
