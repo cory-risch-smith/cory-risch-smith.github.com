@@ -159,26 +159,26 @@ button {
   border: 2px solid #241900;
 }
 
-#copyright {
+.copyright {
   width: 100%;
   text-align: center;
   color: #241900;
   margin-top: 75px;
 }
 
-#footerLinks {
+.footerLinks {
   width: 100%;
   text-align: center;
   margin-top: 15px;
   color: #241900;
 }
 
-#footerLinks > a {
+.footerLinks > a {
   text-decoration: none;
   color: #241900;
 }
 
-#footerLinks > a:hover {
+.footerLinks > a:hover {
   color: rgba(245, 245, 245, 0.851);
 }
 
