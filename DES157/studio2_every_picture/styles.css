@@ -151,7 +151,7 @@ header nav ul li a {
   font-family: 'Open Sans', sans-serif;
   font-size: large;
   font-weight: 300;
-  width: 240px;
+  width: 250px;
   /* margin: auto; */
 }
 
@@ -161,7 +161,6 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -175,7 +174,6 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -189,7 +187,7 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border-radius: 5px;
@@ -202,12 +200,86 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.blockFour {
-  background-color: black;
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid black;
+/* CVD Palette  */
+
+.nonOneBOne {
+  background-color: #ae0213;
+}
+
+.nonOneBTwo {
+  background-color: #ec4959;
+}
+
+.nonOneBThree {
+  background-color: #e80219;
+}
+
+.nonOneBFour {
+  background-color: #692028;
+}
+
+.nonOneBFive {
+  background-color: #b50214;
+}
+
+.dOneBOne {
+  background-color: #6e6004;
+}
+
+.dOneBTwo {
+  background-color: #9e9054;
+}
+
+.dOneBThree {
+  background-color: #948300;
+}
+
+.dOneBFour {
+  background-color: #453f26;
+}
+
+.dOneBFive {
+  background-color: #726505;
+}
+
+.pOneBOne {
+  background-color: #473f0f;
+}
+
+.pOneBTwo {
+  background-color: #756f57;
+}
+
+.pOneBThree {
+  background-color: #625614;
+}
+
+.pOneBFour {
+  background-color: #323028;
+}
+
+.pOneBFive {
+  background-color: #4b4211;
+}
+
+.tOneBOne {
+  background-color: #c0010e;
+}
+
+.tOneBTwo {
+  background-color: #ff1a50;
+}
+
+.tOneBThree {
+  background-color: #ff0013;
+}
+
+.tOneBFour {
+  background-color: #731023;
+}
+
+.tOneBFive {
+  background-color: #c80010;
 }
 
 /***************************** Second Color Section (Orange) **************************/
@@ -245,10 +317,8 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
   width: 100px;
   height: 40px;
-  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -259,7 +329,7 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
@@ -273,11 +343,93 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+/* CVD Palette  */
+
+.nonTwoBOne {
+  background-color: #fa6214;
+}
+
+.nonTwoBTwo {
+  background-color: #e88858;
+}
+
+.nonTwoBThree {
+  background-color: #e35812;
+}
+
+.nonTwoBFour {
+  background-color: #633a26;
+}
+
+.nonTwoBFive {
+  background-color: #b0440e;
+}
+
+.dTwoBOne {
+  background-color: #b4a004;
+}
+
+.dTwoBTwo {
+  background-color: #b9a957;
+}
+
+.dTwoBThree {
+  background-color: #a29102;
+}
+
+.dTwoBFour {
+  background-color: #4f4825;
+}
+
+.dTwoBFive {
+  background-color: #7e7006;
+}
+
+.pTwoBOne {
+  background-color: #8e7d00;
+}
+
+.pTwoBTwo {
+  background-color: #a29355;
+}
+
+.pTwoBThree {
+  background-color: #817101;
+}
+
+.pTwoBFour {
+  background-color: #453f23;
+}
+
+.pTwoBFive {
+  background-color: #635601;
+}
+
+.tTwoBOne {
+  background-color: #ff3855;
+}
+
+.tTwoBTwo {
+  background-color: #fc767d;
+}
+
+.tTwoBThree {
+  background-color: #fa324c;
+}
+
+.tTwoBFour {
+  background-color: #6c3235;
+}
+
+.tTwoBFive {
+  background-color: #c2283a;
 }
 
 /***************************** Third Color Section (Yellow) **************************/
@@ -314,10 +466,8 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
   width: 100px;
   height: 40px;
-  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -328,7 +478,7 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
@@ -342,11 +492,93 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+/* CVD Palette  */
+
+.nonThreeBOne {
+  background-color: #fdcd02;
+}
+
+.nonThreeBTwo {
+  background-color: #e8ca48;
+}
+
+.nonThreeBThree {
+  background-color: #e3ba02;
+}
+
+.nonThreeBFour {
+  background-color: #63571f;
+}
+
+.nonThreeBFive {
+  background-color: #b09002;
+}
+
+.dThreeBOne {
+  background-color: #f1d820;
+}
+
+.dThreeBTwo {
+  background-color: #e6cf4f;
+}
+
+.dThreeBThree {
+  background-color: #dac31d;
+}
+
+.dThreeBFour {
+  background-color: #635922;
+}
+
+.dThreeBFive {
+  background-color: #aa9714;
+}
+
+.pThreeBOne {
+  background-color: #e6ca00;
+}
+
+.pThreeBTwo {
+  background-color: #dec636;
+}
+
+.pThreeBThree {
+  background-color: #d1b700;
+}
+
+.pThreeBFour {
+  background-color: #5f5518;
+}
+
+.pThreeBFive {
+  background-color: #a28e02;
+}
+
+.tThreeBOne {
+  background-color: #ffbaaf;
+}
+
+.tThreeBTwo {
+  background-color: #fabbb0;
+}
+
+.tThreeBThree {
+  background-color: #f7a99e;
+}
+
+.tThreeBFour {
+  background-color: #6b504b;
+}
+
+.tThreeBFive {
+  background-color: #c0837a;
 }
 
 /***************************** Fourth Color Section (Green) **************************/
@@ -383,10 +615,8 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
   width: 100px;
   height: 40px;
-  border: 1px solid black;
   border-radius: 5px;
 }
 
@@ -397,7 +627,7 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
@@ -411,11 +641,93 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+/* CVD Palette  */
+
+.nonFourBOne {
+  background-color: #399b45;
+}
+
+.nonFourBTwo {
+  background-color: #9feea9;
+}
+
+.nonFourBThree {
+  background-color: #57eb68;
+}
+
+.nonFourBFour {
+  background-color: #486b4c;
+}
+
+.nonFourBFive {
+  background-color: #44b851;
+}
+
+.dFourBOne {
+  background-color: #91844b;
+}
+
+.dFourBTwo {
+  background-color: #e3d9ad;
+}
+
+.dFourBThree {
+  background-color: #dbca72;
+}
+
+.dFourBFour {
+  background-color: #66614e;
+}
+
+.dFourBFive {
+  background-color: #ac9e59;
+}
+
+.pFourBOne {
+  background-color: #9d8d3c;
+}
+
+.pFourBTwo {
+  background-color: #f0e0a5;
+}
+
+.pFourBThree {
+  background-color: #efd75b;
+}
+
+.pFourBFour {
+  background-color: #6c654a;
+}
+
+.pFourBFive {
+  background-color: #bba846;
+}
+
+.tFourBOne {
+  background-color: #229788;
+}
+
+.tFourBTwo {
+  background-color: #95eadc;
+}
+
+.tFourBThree {
+  background-color: #30e5ce;
+}
+
+.tFourBFour {
+  background-color: #446963;
+}
+
+.tFourBFive {
+  background-color: #27b4a1;
 }
 
 /***************************** Fifth Color Section (Blue) **************************/
@@ -452,11 +764,91 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
   width: 100px;
   height: 40px;
-  border: 1px solid black;
   border-radius: 5px;
+}
+
+/* cvdBlocks */
+
+.nonFiveA {
+  background-color: #93a6bf;
+}
+
+.nonFiveB {
+  background-color: #035aa6;
+}
+
+.nonFiveC {
+  background-color: #023e73;
+}
+
+.nonFiveD {
+  background-color: #537fa6;
+}
+
+.nonFiveE {
+  background-color: #0367a6;
+}
+
+.dFiveBOne {
+  background-color: #99a2be;
+}
+
+.dFiveBTwo {
+  background-color: #0652a5;
+}
+
+.dFiveBThree {
+  background-color: #083972;
+}
+
+.dFiveBFour {
+  background-color: #6477a5;
+}
+
+.dFiveBFive {
+  background-color: #315da5;
+}
+
+.pFiveBOne {
+  background-color: #9ea7c0;
+}
+
+.pFiveBTwo {
+  background-color: #3061a9;
+}
+
+.pFiveBThree {
+  background-color: #214275;
+}
+
+.pFiveBFour {
+  background-color: #707fa8;
+}
+
+.pFiveBFive {
+  background-color: #486aa9;
+}
+
+.tFiveBOne {
+  background-color: #87abae;
+}
+
+.tFiveBTwo {
+  background-color: #006c78;
+}
+
+.tFiveBThree {
+  background-color: #004b52;
+}
+
+.tFiveBFour {
+  background-color: #2a888c;
+}
+
+.tFiveBFive {
+  background-color: #01767e;
 }
 
 /* Second CB Color Palette Block */
@@ -466,7 +858,7 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
@@ -480,7 +872,7 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
+  /* background-color: black; */
   width: 100px;
   height: 40px;
   border: 1px solid black;
@@ -521,11 +913,11 @@ header nav ul li a {
 }
 
 .blockOne {
-  background-color: black;
-  width: 100px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  border-radius: 100%;
   border: 1px solid black;
-  border-radius: 5px;
 }
 
 /* Second CB Color Palette Block */
@@ -535,11 +927,11 @@ header nav ul li a {
 }
 
 .blockTwo {
-  background-color: black;
-  width: 100px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  border-radius: 100%;
   border: 1px solid black;
-  border-radius: 5px;
 }
 
 /* Third CB Color Palette block */
@@ -549,11 +941,101 @@ header nav ul li a {
 }
 
 .blockThree {
-  background-color: black;
-  width: 100px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  border-radius: 100%;
   border: 1px solid black;
-  border-radius: 5px;
+}
+
+.blockFour {
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  border-radius: 100%;
+  border: 1px solid black;
+}
+
+/* CVD Palette  */
+
+.nonSixBOne {
+  background-color: #482d1f;
+}
+
+.nonSixBTwo {
+  background-color: #eec3ae;
+}
+
+.nonSixBThree {
+  background-color: #eb9165;
+}
+
+.nonSixBFour {
+  background-color: #6b584e;
+}
+
+.nonSixBFive {
+  background-color: #b8724f;
+}
+
+.dSixBOne {
+  background-color: #3b361f;
+}
+
+.dSixBTwo {
+  background-color: #d8cfad;
+}
+
+.dSixBThree {
+  background-color: #bfaf64;
+}
+
+.dSixBFour {
+  background-color: #605d4e;
+}
+
+.dSixBFive {
+  background-color: #968850;
+}
+
+.pSixBOne {
+  background-color: #33301e;
+}
+
+.pSixBTwo {
+  background-color: #cec7ad;
+}
+
+.pSixBThree {
+  background-color: #a99c61;
+}
+
+.pSixBFour {
+  background-color: #5d5a4d;
+}
+
+.pSixBFive {
+  background-color: #847a4c;
+}
+
+.tSixBOne {
+  background-color: #4e2829;
+}
+
+.tSixBTwo {
+  background-color: #fabcbd;
+}
+
+.tSixBThree {
+  background-color: #ff8086;
+}
+
+.tSixBFour {
+  background-color: #705554;
+}
+
+.tSixBFive {
+  background-color: #c86569;
 }
 
 /* Footer */
@@ -582,12 +1064,13 @@ footer > a {
   font-size: 18px;
   text-decoration: none;
   color: black;
+  border-radius: 100%;
 }
 
 footer > a > p:hover {
   color: #ffffff;
   box-shadow: 0px 0px 7px 6px #ffffff;
-  transform: rotate(360deg);
+  border-radius: 100%;
 }
 
 /* CLasses for JS use */
