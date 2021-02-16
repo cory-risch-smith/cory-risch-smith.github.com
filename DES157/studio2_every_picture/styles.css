@@ -962,8 +962,6 @@ footer > a {
 
 footer > a > p:hover {
   color: #ffffff;
-  box-shadow: 0px 0px 7px 6px #ffffff;
-  border-radius: 100%;
 }
 
 /* CLasses for JS use */
