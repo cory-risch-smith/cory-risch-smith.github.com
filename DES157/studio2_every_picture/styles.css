@@ -160,12 +160,6 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.blockOne {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* Second CVD Color Palette Block */
 
 .paletteTwo {
@@ -173,24 +167,11 @@ header nav ul li a {
   margin-bottom: 20px;
 }
 
-.blockTwo {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* Third CVD Color Palette block */
 
 .paletteThree {
   display: flex;
   margin-bottom: 20px;
-}
-
-.blockThree {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
 }
 
 /* Fourth CVD Color Palette */
@@ -316,38 +297,16 @@ header nav ul li a {
   display: flex;
 }
 
-.blockOne {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* Second CB Color Palette Block */
 
 .paletteTwo {
   display: flex;
 }
 
-.blockTwo {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
 /* Third CB Color Palette block */
 
 .paletteThree {
   display: flex;
-}
-
-.blockThree {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 /* CVD Palette  */
@@ -465,38 +424,16 @@ header nav ul li a {
   display: flex;
 }
 
-.blockOne {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* Second CB Color Palette Block */
 
 .paletteTwo {
   display: flex;
 }
 
-.blockTwo {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
 /* Third CB Color Palette block */
 
 .paletteThree {
   display: flex;
-}
-
-.blockThree {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 /* CVD Palette  */
@@ -614,38 +551,16 @@ header nav ul li a {
   display: flex;
 }
 
-.blockOne {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* Second CB Color Palette Block */
 
 .paletteTwo {
   display: flex;
 }
 
-.blockTwo {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
 /* Third CB Color Palette block */
 
 .paletteThree {
   display: flex;
-}
-
-.blockThree {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 /* CVD Palette  */
@@ -763,12 +678,6 @@ header nav ul li a {
   display: flex;
 }
 
-.blockOne {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-}
-
 /* cvdBlocks */
 
 .nonFiveA {
@@ -857,26 +766,10 @@ header nav ul li a {
   display: flex;
 }
 
-.blockTwo {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-
 /* Third CB Color Palette block */
 
 .paletteThree {
   display: flex;
-}
-
-.blockThree {
-  /* background-color: black; */
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-  border-radius: 5px;
 }
 
 /***************************** Sixth Color Section (Brown) **************************/
@@ -915,7 +808,7 @@ header nav ul li a {
 .blockOne {
   width: 60px;
   height: 60px;
-  margin-left: 20px;
+  margin-left: 40px;
   border-radius: 100%;
   border: 1px solid black;
 }
@@ -929,7 +822,7 @@ header nav ul li a {
 .blockTwo {
   width: 60px;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 40px;
   border-radius: 100%;
   border: 1px solid black;
 }
@@ -943,7 +836,7 @@ header nav ul li a {
 .blockThree {
   width: 60px;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 40px;
   border-radius: 100%;
   border: 1px solid black;
 }
@@ -951,7 +844,7 @@ header nav ul li a {
 .blockFour {
   width: 60px;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 40px;
   border-radius: 100%;
   border: 1px solid black;
 }
