@@ -122,7 +122,9 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
+  padding: 0 150px;
+  padding-top: 250px;
+  margin-top: -4px;
 }
 
 .block1 {
@@ -133,15 +135,15 @@ header nav ul li a {
 .cvdPalette {
   flex: 100%;
   width: 100%;
-  margin-left: 60px;
+  margin-left: 120px;
 }
 
 /* First CVD Color Palette block */
 
 .cBlockOne {
   background-color: #ae0213;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 100%;
   box-shadow: 0px 3px 19px 1px #777777;
 }
@@ -216,7 +218,8 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
+  padding: 0 150px;
+  padding-top: 250px;
 }
 
 .block2 {
@@ -284,7 +287,8 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
+  padding: 0 150px;
+  padding-top: 250px;
 }
 
 .block3 {
@@ -352,7 +356,8 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
+  padding: 0 150px;
+  padding-top: 250px;
 }
 
 .block4 {
@@ -419,7 +424,8 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
+  padding: 0 150px;
+  padding-top: 250px;
   background-color: #6d9fd8df;
 }
 
@@ -487,8 +493,9 @@ header nav ul li a {
   height: 1150px;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 150px;
-  background-color: #786156c3;
+  padding: 0 150px;
+  padding-top: 250px;
+  background-color: #87633daa;
 }
 
 .block6 {
@@ -552,11 +559,41 @@ header nav ul li a {
 /* Footer */
 
 footer {
+  background: linear-gradient(
+    90deg,
+    rgba(174, 2, 19, 0.6755077030812324) 3%,
+    rgba(250, 98, 20, 0.6643032212885154) 21%,
+    rgba(253, 205, 2, 0.700717787114846) 37%,
+    rgba(57, 155, 69, 0.6727065826330532) 55%,
+    rgba(0, 71, 153, 0.6783088235294117) 77%,
+    rgba(72, 45, 31, 0.7287289915966386) 96%
+  );
+  height: 75px;
   text-align: center;
-  margin: 35px 0;
+  padding-top: 75px;
+}
+
+footer > a > p {
+  display: inline;
 }
 
 footer > a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
   text-decoration: none;
   color: black;
+}
+
+footer > a > p:hover {
+  color: #ffffff;
+  box-shadow: 0px 0px 7px 6px #ffffff;
+  transform: rotate(360deg);
+}
+
+/* CLasses for JS use */
+
+.animate {
+  transform: rotate(4deg) rotateY(7200deg);
+  transition: 4s all ease;
+  z-index: 1;
 }
