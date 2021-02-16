@@ -55,11 +55,6 @@ header > h1 {
 
 /******* Navigation *******/
 
-ul {
-  /* had to take this off of default styling, not surte how to remove otherwise */
-  padding-inline-start: 0;
-}
-
 li {
   display: flex;
   list-style-type: none;
