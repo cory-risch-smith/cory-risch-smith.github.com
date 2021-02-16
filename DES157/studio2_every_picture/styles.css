@@ -1,0 +1,518 @@
+body,
+main,
+header,
+footer {
+  max-width: 1366px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+article {
+  text-align: left;
+  margin: 0 auto;
+  width: 45ch;
+}
+
+/******* Header and Navigation *******/
+
+header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.708);
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+header > h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  margin: 0;
+  width: 100%;
+  color: rgba(250, 235, 215, 0.585);
+}
+
+/******* Navigation *******/
+
+ul {
+  /* had to take this off of default styling, not surte how to remove otherwise */
+  padding-inline-start: 0;
+}
+
+li {
+  display: flex;
+  list-style-type: none;
+  display: inline;
+}
+
+header nav {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+header nav ul li {
+  box-sizing: border-box;
+}
+
+header nav ul li a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  border-radius: 100%;
+  transition: 2s all;
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6 {
+  width: 95px;
+  height: 95px;
+  transition: 0.5s all;
+}
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover,
+.block5:hover,
+.block6:hover {
+  border-radius: 100%;
+  transform: scale(3, 3) rotate(720deg);
+  transition: 2s all;
+}
+
+/********************* First Color Section (Red) *****************************/
+
+#first {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 300px;
+  padding: 20px 20px;
+}
+
+.block1 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #ae0213;
+}
+
+.cbPaletteOne {
+  width: 100%;
+}
+
+/* First CB Color Palette block */
+.cBlockOne {
+  background-color: #ae0213;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/***************************** Second Color Section (Orange) **************************/
+
+#second {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.block2 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #fa6214;
+}
+
+/* First CB Color Palette block */
+.cBlockTwo {
+  background-color: #fa6214;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/***************************** Third Color Section (Yellow) **************************/
+
+#third {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.block3 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #fdcd02;
+}
+
+/* First CB Color Palette block */
+.cBlockThree {
+  background-color: #fdcd02;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/***************************** Fourth Color Section (Green) **************************/
+
+#fourth {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.block4 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #399b45;
+}
+
+/* First CB Color Palette block */
+.cBlockFour {
+  background-color: #399b45;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/***************************** Fifth Color Section (Blue) **************************/
+
+#fifth {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.block5 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #004799;
+}
+
+/* First CB Color Palette block */
+.cBlockFive {
+  background-color: #004799;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/***************************** Sixth Color Section (Brown) **************************/
+
+#sixth {
+  height: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+}
+
+.block6 {
+  border-radius: 100%;
+  box-shadow: inset 0px 0px 19px 12px #482d1f;
+}
+
+/* First CB Color Palette block */
+.cBlockSix {
+  background-color: #482d1f;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 0px 3px 19px 1px #777777;
+}
+.blockName {
+  width: 120px;
+  margin: auto;
+}
+
+.paletteOne {
+  display: flex;
+}
+
+.blockOne {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Second CB Color Palette Block */
+
+.paletteTwo {
+  display: flex;
+}
+
+.blockTwo {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Third CB Color Palette block */
+
+.paletteThree {
+  display: flex;
+}
+
+.blockThree {
+  background-color: black;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 35px 0;
+}
+
+footer > a {
+  text-decoration: none;
+  color: black;
+}
