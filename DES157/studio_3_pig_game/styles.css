@@ -124,7 +124,7 @@ option {
 /******************* Game section *******************/
 
 body {
-  background-image: url(/images/game_field.jpg);
+  background-image: url(images/game_field.jpg);
   max-width: 1366px;
   max-height: 768px;
   margin: 0 auto;
