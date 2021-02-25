@@ -1,0 +1,333 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Hidden and showing classes */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.showing {
+  visibility: showing;
+  opacity: 1;
+}
+
+/* Overlay Styling */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Properties that allow for a smooth transition for the overlay */
+  transition-property: opacity, visibility;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.overlayContainer {
+  top: 0;
+  left: 0;
+  height: 760px;
+  color: #342400;
+  max-width: 1366px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.overlayContainerTwo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  color: #342400;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+/********** Welcome Screen Styling **************/
+
+#welcome > div > header > h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 50px;
+  margin: 75px 0;
+}
+
+#welcome > div > header {
+  display: flex;
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome > div > label {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+#welcome > div > select {
+  justify-content: center;
+  text-align-last: center;
+  color: #eaeaea;
+  width: 400px;
+  height: 50px;
+  margin: 25px 20%;
+  border-radius: 15px;
+  background-color: rgba(244, 239, 235, 0.249);
+  border: none;
+}
+
+#roundSelection,
+option {
+  outline: none;
+  width: 75%;
+  height: 100px;
+  border: 0;
+  border-bottom: 2px solid #241900;
+  font-size: 24px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  color: #eaeaea;
+  background: #22c0c300;
+}
+
+#welcome > div > a > button {
+  width: 50%;
+  margin: 0 25%;
+  margin-top: 125px;
+  border-radius: 15px;
+  font-size: x-large;
+  height: 150px;
+  color: #eaeaea;
+  background-color: rgb(0, 206, 48);
+  border: none;
+}
+
+/* embed {
+  display: none;
+}
+
+#welcome> div > button active + embed {
+  display: block;
+} */
+
+#welcome > div > a > button:hover {
+  color: #eaeaea;
+  background-color: rgb(9, 167, 46);
+}
+
+/******************* Game section *******************/
+
+body {
+  background-image: url(/images/game_field.jpg);
+  max-width: 1366px;
+  max-height: 768px;
+  margin: 0 auto;
+  font-family: Arial;
+  color: #333;
+  line-height: 1.75em;
+}
+main > h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/************************* Buttons ***********************/
+
+button {
+  padding: 10px;
+}
+
+/* Dice images  */
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+/* CLasses for JS use */
+
+.animate {
+  transform: rotate(45deg) rotateY(7200deg);
+  transition: 4s all ease;
+  z-index: 1;
+}
+
+#roll {
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  color: rgb(35, 35, 35);
+  background-color: rgb(0, 213, 50);
+}
+
+#rollagain {
+  margin-right: 10px;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  color: rgb(35, 35, 35);
+  background-color: rgb(0, 213, 50);
+}
+
+#pass {
+  margin-left: 10px;
+  height: 60px;
+  width: 200px;
+  border-radius: 15px;
+  color: rgb(35, 35, 35);
+  background-color: rgb(208, 179, 32);
+}
+
+#quit {
+  margin-top: 50px;
+  height: 50px;
+  width: 225px;
+  border-radius: 15px;
+  color: rgb(247, 242, 217);
+  background-color: rgb(167, 26, 26);
+}
+
+#instructions {
+  background-color: #eaeaea;
+  color: #14346f;
+  width: 273px;
+  height: 100%;
+  padding-right: 45px;
+  padding-left: 45px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+#instructions > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#instructions > h1 {
+  margin: 60px 0;
+  font-size: 24px;
+}
+
+/************* Scoreboard ************/
+
+#fieldMain {
+  top: 0;
+  width: 975px;
+  line-height: 80%;
+}
+
+#fieldMain > h2 {
+  margin: 50px auto;
+  font-size: xx-large;
+}
+
+#scoreBoard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #14346f;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+#playerOne {
+  padding-top: 10px;
+  grid-column: 1;
+  color: #eaeaea;
+}
+
+#rounds {
+  padding-top: 50px;
+  grid-column: 2;
+  grid-row: 1;
+  color: #eaeaea;
+}
+
+.numberOfRounds {
+  margin: 0 auto;
+  background-color: black;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.numberOfRounds > h4 {
+  color: rgb(167, 26, 26);
+  font-size: large;
+}
+
+#possesions {
+  grid-column: 2;
+  grid-row: 2;
+  color: #eaeaea;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.posession {
+  display: inline-block;
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  /* margin: 0 auto; */
+}
+
+#playerTwo {
+  padding-top: 10px;
+  grid-column: 3;
+  color: #eaeaea;
+}
+
+.playerOneScoreBox,
+.playerTwoScoreBox {
+  background-color: black;
+  height: 100px;
+  line-height: 100px;
+  width: 125px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#playerOneScore,
+#playerTwoScore {
+  color: rgb(167, 26, 26);
+  font-size: xx-large;
+}
+
+#score {
+  text-align: center;
+}
+
+#game {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 215px;
+  padding-top: 25px;
+}
+
+#game > p {
+  text-align: center;
+  flex: 100%;
+}
+
+#gamecontrol {
+  text-align: center;
+}
+#actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}

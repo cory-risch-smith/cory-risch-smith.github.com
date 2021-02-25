@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Of PIG</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section id="welcome" class="overlay showing">
+        <div class="overlayContainer">
+          <header><h1>Welcome To Game Of PIG!</h1></header>
+          <label for="rounds"
+            >Select the number of rounds you wish to play:</label
+          >
+
+          <select name="rounds" id="roundSelection">
+            <option class="option" value="">– select –</option>
+            <option class="option" value="1">1</option>
+            <option class="option" value="2">2</option>
+            <option class="option" value="3">3</option>
+          </select>
+
+          <a id="startSound" src="sounds/start.mp3" preload="auto"
+            ><button
+              id="introScreen"
+              class="startGame"
+              href="javascript:startSound('start');"
+            >
+              START!
+            </button>
+          </a>
+          <!-- <embed src="sounds/start.mp3" type="sounds" /> -->
+        </div>
+      </section>
+
+      <section id="overlayOne" class="overlay hidden">
+        <div class="overlayContainerTwo">
+          <header id="instructions">
+            <h1>Game Of PIG</h1>
+            <p>
+              There are two players. The player whose turn it is rolls the dice.
+              The total of the roll is added to the current player's score,
+              unless either die comes up as a "one". I this happens, this
+              player's turn is over, and it is the other player’s turn. After
+              each roll, the current player can either roll again, (assuming a
+              "one" was not rolled) or if the current player feels that luck is
+              running thin, they can pass to the other player. The first player
+              to get 30 points or higher wins.
+            </p>
+            <p>
+              Oh, and if you roll two "ones" (snake eyes) 🐍 👀, your current
+              score gets zeroed out. So just don't, okay?
+            </p>
+          </header>
+
+          <main id="fieldMain">
+            <h2>Let The Games Begins!</h2>
+            <div id="scoreBoard">
+              <div id="playerOne">
+                PLAYER 1
+                <div class="playerOneScoreBox">
+                  <h3 id="playerOneScore">00</h3>
+                </div>
+              </div>
+              <div id="possesions">
+                <div class="posession pOnePosession"></div>
+                POSSESION
+                <div class="posession pTwoPosession"></div>
+              </div>
+              <div id="rounds">
+                ROUNDS
+                <div class="numberOfRounds"><h4>3</h4></div>
+              </div>
+              <div id="playerTwo">
+                PLAYER 2
+                <div class="playerTwoScoreBox">
+                  <h3 id="playerTwoScore">00</h3>
+                </div>
+              </div>
+            </div>
+
+            <div id="gamecontrol">
+              <!-- Put the message to corresponding player in here -->
+
+              <!-- <h2>Start a Game</h2> -->
+            </div>
+
+            <div id="game"></div>
+            <div id="actions"></div>
+            <div id="score"></div>
+
+            <!-- change to scoreboard -->
+          </main>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
