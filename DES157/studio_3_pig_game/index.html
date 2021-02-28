@@ -32,16 +32,7 @@
             <option class="option" value="3">3</option>
           </select>
 
-          <a id="startSound" src="sounds/start.mp3" preload="auto"
-            ><button
-              id="introScreen"
-              class="startGame"
-              href="javascript:startSound('start');"
-            >
-              START!
-            </button>
-          </a>
-          <!-- <embed src="sounds/start.mp3" type="sounds" /> -->
+          <button id="introScreen" class="startGame">START!</button>
         </div>
       </section>
 
@@ -91,13 +82,16 @@
               </div>
             </div>
 
-            <div id="gamecontrol">
-              <!-- Put the message to corresponding player in here -->
+            <div id="gamecontrol"></div>
+            <!-- Put the message to corresponding player in here -->
 
-              <!-- <h2>Start a Game</h2> -->
+            <!-- <h2>Start a Game</h2> -->
+
+            <div id="game">
+              <img id="dieOne" src="images/blankDie.png" alt="Blank Die" />
+              <img id="dieTwo" src="images/blankDie.png" alt="Blank Die" />
             </div>
-
-            <div id="game"></div>
+            <div id="userMsg"></div>
             <div id="actions"></div>
             <div id="score"></div>
 

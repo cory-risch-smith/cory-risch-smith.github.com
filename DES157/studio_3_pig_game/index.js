@@ -1,16 +1,27 @@
 (function () {
   'use strict';
 
+  // Element and corresponding sounds
   var startGame = document.getElementById('startGame');
-  var gameControl = document.getElementById('gamecontrol');
+  const startSound = new Audio('sounds/start.mp3');
+
   var game = document.getElementById('game');
+  const snakeSound = new Audio('sounds/hiss.mp3');
+
+  var gameControl = document.getElementById('gamecontrol');
+  const dice = new Audio('sounds/dice.mp3');
+
   var score = document.getElementById('score');
   var actionArea = document.getElementById('actions');
   var pOnePosession = document.querySelector('.pOnePosession');
   var pTwoPosession = document.querySelector('.pTwoPosession');
-  var numRounds = document.querySelector('.numberOfRounds');
+  // var numRounds = document.querySelector('.numberOfRounds');
   var pOneScore = document.getElementById('playerOneScore');
   var pTwoScore = document.getElementById('playerTwoScore');
+  var userMsg = document.getElementById('userMsg');
+
+  var dieOne = document.getElementById('dieOne');
+  var dieTwo = document.getElementById('dieTwo');
 
   var gameData = {
     dice: [
@@ -45,6 +56,9 @@
         //Pass in selected rounds here ^^
       });
 
+    //Plays sounds
+    startSound.play();
+
     // Changes overlay from welcome to game page
     document.getElementById('welcome').className = 'overlay hidden';
     document.getElementById('overlayOne').className = 'overlay showing';
@@ -63,9 +77,10 @@
   });
 
   function setUpTurn() {
-    game.innerHTML = `<h3>It's your turn ${
+    gameControl.innerHTML = `<h3>It's your turn ${
       gameData.players[gameData.index]
     }, don't mess this up!</h3>`;
+    userMsg.innerHTML = '';
 
     //Assigning the proper color to the proper player posession based on random selection
 
@@ -80,16 +95,24 @@
     actionArea.innerHTML = "<button id='roll'>Roll 'Em!</button>";
     document.getElementById('roll').addEventListener('click', function () {
       throwDice();
+
+      dieOne.className = 'animate';
+      dieTwo.className = 'animate';
+      dieOne.className = '';
+      dieTwo.className = '';
     });
   }
 
   function throwDice() {
+    dice.play();
     actionArea.innerHTML = '';
     gameData.roll1 = Math.floor(Math.random() * 6) + 1;
     gameData.roll2 = Math.floor(Math.random() * 6) + 1;
 
-    game.innerHTML += `<img src="${gameData.dice[gameData.roll1 - 1]}">
-              <img src="${gameData.dice[gameData.roll2 - 1]}">`;
+    // Injects the corresponding dice roll image into the src attribute for the img tag
+
+    dieOne.src = gameData.dice[gameData.roll1 - 1];
+    dieTwo.src = gameData.dice[gameData.roll2 - 1];
 
     gameData.rollSum = gameData.roll1 + gameData.roll2;
 
@@ -99,7 +122,9 @@
 
     //if two 1s are rolled...
     if (gameData.rollSum === 2) {
-      game.innerHTML += '<h3>Shoot Darn Dag Nabbit! Snake Eyes 🐍 👀 ...</h3>';
+      userMsg.innerHTML +=
+        '<h3>Shoot Darn Dag Nabbit! Snake Eyes 🐍 👀 ...</h3>';
+      snakeSound.play();
       gameData.score[gameData.index] = 0;
       gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
@@ -116,11 +141,16 @@
 
       gameData.index ? (gameData.index = 0) : (gameData.index = 1);
 
-      game.innerHTML += `<h3>Darn it! A One! ${
+      userMsg.innerHTML += `<h3>Darn it! A One! ${
         gameData.players[gameData.index]
       }, here's your chance!</h3>`;
 
       setTimeout(setUpTurn, 2000);
+
+      dieOne.className = 'animate';
+      dieTwo.className = 'animate';
+      dieOne.className = '';
+      dieTwo.className = '';
       //   console.log('One dice was a 1!');
     } else {
       gameData.score[gameData.index] =
@@ -131,8 +161,13 @@
       document
         .getElementById('rollagain')
         .addEventListener('click', function () {
-          setUpTurn();
+          throwDice();
+          dice.play();
 
+          dieOne.className = 'animate';
+          dieTwo.className = 'animate';
+          dieOne.className = '';
+          dieTwo.className = '';
           //might change to throwDice();
         });
 
@@ -163,6 +198,12 @@
         gameData.score[gameData.index]
       } points!</h2>`;
 
+      // Plays corresponding winner sound.
+
+      let winner = new Audio(`sounds/${gameData.players[gameData.index]}.mp3`);
+
+      winner.play();
+
       actionArea.innerHTML = '';
       score.innerHTML += '<button id="quit">Start a New Game?</button>';
 
@@ -185,11 +226,6 @@
     pTwoScore.innerHTML = gameData.score[1];
 
     // score.innerHTML = `<p>The score is currently <strong>${gameData.players[0]} ${gameData.score[0]}</strong> and <strong>${gameData.players[1]} ${gameData.score[1]}</strong></p>`;
-  }
-
-  // start sounds
-  function startSound(start) {
-    document.getElementById(startSound).play();
   }
 
   //   console.log('happy hacking');
