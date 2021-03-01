@@ -1,7 +1,7 @@
 .container {
   height: 100vh;
-  background: #7adcff;
-  color: #26414b;
+  background: #26414b;
+  color: #f7ad5e;
 }
 
 body {
@@ -96,8 +96,8 @@ main {
 main > section {
   width: 400px;
   border-radius: 15px;
-  background: #ab671f;
-  color: #7ADCFF;
+  background: #f7ad5e;
+  color: #ab671f;
   margin: 0 15px;
   text-align: center;
 }
@@ -117,7 +117,7 @@ main > section > ul > a {
 }
 main > section > ul > li > a {
   padding: 10px 0;
-  color: #f7ad5e;
+  color: #ab671f;
 
   text-decoration: none;
   display: block;
@@ -126,8 +126,8 @@ main > section > ul > li > a {
 
 main > section > ul > li > a:hover {
   display: block;
-  background-color: #7adcff;
-  color: #ab671f;
+  background-color: #26414b;
+  color: #7adcff;
 }
 
 footer {
@@ -139,11 +139,11 @@ footer {
 
 footer > p > a {
   text-decoration: none;
-  color: #26414b;
+  color: #f7ad5e;
 }
 
 footer > p > a:hover {
-  color: #ab671f;
+  color: #7adcff;
 }
 
 @media (min-width: 800px) {
