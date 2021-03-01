@@ -97,7 +97,7 @@ main > section {
   width: 400px;
   border-radius: 15px;
   background: #f7ad5e;
-  color: #ab671f;
+  color: #26414b;
   margin: 0 15px;
   text-align: center;
 }
@@ -127,7 +127,7 @@ main > section > ul > li > a {
 main > section > ul > li > a:hover {
   display: block;
   background-color: #26414b;
-  color: #7adcff;
+  color: #f7ad5e;
 }
 
 footer {
