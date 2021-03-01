@@ -94,12 +94,9 @@
 
     actionArea.innerHTML = "<button id='roll'>Roll 'Em!</button>";
     document.getElementById('roll').addEventListener('click', function () {
-      throwDice();
-
-      dieOne.className = 'animate';
-      dieTwo.className = 'animate';
       dieOne.className = '';
       dieTwo.className = '';
+      throwDice();
     });
   }
 
@@ -117,6 +114,9 @@
     gameData.rollSum = gameData.roll1 + gameData.roll2;
 
     // console.log(gameData);
+
+    dieOne.className = 'animate';
+    dieTwo.className = 'animate';
 
     //  *************** conditionals for dice roll ****************
 
@@ -147,10 +147,6 @@
 
       setTimeout(setUpTurn, 2000);
 
-      dieOne.className = 'animate';
-      dieTwo.className = 'animate';
-      dieOne.className = '';
-      dieTwo.className = '';
       //   console.log('One dice was a 1!');
     } else {
       gameData.score[gameData.index] =
@@ -161,13 +157,12 @@
       document
         .getElementById('rollagain')
         .addEventListener('click', function () {
+          dieOne.className = '';
+          dieTwo.className = '';
+
           throwDice();
           dice.play();
 
-          dieOne.className = 'animate';
-          dieTwo.className = 'animate';
-          dieOne.className = '';
-          dieTwo.className = '';
           //might change to throwDice();
         });
 
