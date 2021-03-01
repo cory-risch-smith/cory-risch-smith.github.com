@@ -365,3 +365,16 @@ img {
   transition: 2s;
   z-index: 1;
 }
+
+/* Uses for blinking winner text */
+
+.winnerFlash {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}

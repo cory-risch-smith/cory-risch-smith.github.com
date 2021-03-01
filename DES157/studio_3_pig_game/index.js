@@ -189,9 +189,9 @@
 
   function checkWin() {
     if (gameData.score[gameData.index] > gameData.gameEnd) {
-      score.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${
-        gameData.score[gameData.index]
-      } points!</h2>`;
+      score.innerHTML = `<h2 class="winnerFlash">${
+        gameData.players[gameData.index]
+      } wins with ${gameData.score[gameData.index]} points!</h2>`;
 
       // Plays corresponding winner sound.
 
