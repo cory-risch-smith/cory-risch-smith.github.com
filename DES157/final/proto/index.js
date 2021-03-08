@@ -1,87 +1,115 @@
-// console.log('happy hacking');
+(function () {
+  'use strict';
+  // console.log('happy hacking');
 
-const div = document.querySelectorAll('.box');
-// console.log(div);
+  var scrollPos = 0;
 
-var scrollPos = 0;
-var box1 = document.getElementById('box1');
-var box2 = document.getElementById('box2');
-var box3 = document.getElementById('box3');
-var box4 = document.getElementById('box4');
+  var overlay = document.getElementById('overlay');
+  var box1 = document.getElementById('box1');
+  var box2 = document.getElementById('box2');
+  var box3 = document.getElementById('box3');
+  var box4 = document.getElementById('box4');
+  var boxOneImg = document.getElementById('boxOneImg');
+  var voice1 = document.getElementById('voice1');
+  var voice2 = document.getElementById('voice2');
+  var voice3 = document.getElementById('voice3');
+  var overlayBtn = document.querySelector('.btn');
+  var wrapper = document.getElementById('wrapper');
 
-window.addEventListener('load', function () {
-  //sets the initial div to small size in viewport
-  box1.style.transform = 'matrix(0,0,0,0,0,0)';
-  box2.style.transform = 'matrix(0,0,0,0,0,0)';
-  box3.style.transform = 'matrix(0,0,0,0,0,0)';
-  box4.style.transform = 'matrix(0,0,0,0,0,0)';
+  window.addEventListener('load', function () {
+    //sets the initial div to small size in viewport
+    box1.style.transform = 'matrix(0,0,0,0,0,0)';
+    box2.style.transform = 'matrix(0,0,0,0,0,0)';
+    box3.style.transform = 'matrix(0,0,0,0,0,0)';
+    box4.style.visibility = 'hidden';
 
-  window.addEventListener('scroll', function () {
-    scrollPos = [window.scrollY];
-    console.log(scrollPos);
+    overlayBtn.addEventListener('click', function () {
+      overlay.className = 'box hidden';
+      overlay.style.width = '0px';
+      overlay.style.height = '0px';
+    });
 
-    // Handles 1st div
+    window.addEventListener('scroll', function () {
+      scrollPos = [window.scrollY];
+      console.log(scrollPos);
 
-    if (scrollPos >= 0 && scrollPos <= 2000) {
-      //   Will have to change to division of position tops of div.
+      // Handles 1st div
+      if (scrollPos >= 0 && scrollPos <= 6000) {
+        //   Will have to change to division of position tops of div.
 
-      box1.style.visibility = 'visible';
+        box1.style.visibility = 'visible';
 
-      var myScale = scrollPos / 1000;
-      console.log(myScale);
+        var myScale = scrollPos / 1000;
+        console.log(myScale);
 
-      box1.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
+        box1.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
-      box1.style.opacity = `${myScale}`;
+        box1.style.opacity = `${myScale}`;
 
-      box1.style.zIndex = '1';
-    }
+        box1.style.zIndex = '1';
 
-    // Handles 2nd div
-    else if (scrollPos >= 2001 && scrollPos <= 4000) {
-      box1.style.visibility = 'hidden';
-      box2.style.visibility = 'visible';
+        box1.style.borderRadius = `${myScale * 70}%`;
 
-      myScale = scrollPos / 1000 - 2;
+        voice1.style.visibility = 'visible';
+      }
 
-      console.log(myScale);
+      //Conditions for first set of voices
 
-      box2.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
+      // Handles 2nd div
+      else if (scrollPos >= 6001 && scrollPos <= 9000) {
+        box1.style.visibility = 'hidden';
+        box2.style.visibility = 'visible';
 
-      box2.style.opacity = `${myScale}`;
+        myScale = scrollPos / 1000 - 6;
 
-      box2.style.zIndex = '1';
-    }
-    // Handles 3rd div
-    else if (scrollPos >= 4001 && scrollPos <= 6000) {
-      box2.style.visibility = 'hidden';
-      box3.style.visibility = 'visible';
+        console.log(myScale);
 
-      myScale = scrollPos / 1000 - 4;
+        box2.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
-      console.log(myScale);
+        box2.style.opacity = `${myScale}`;
 
-      box3.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
+        box2.style.zIndex = '1';
 
-      box3.style.opacity = `${myScale}`;
+        voice1.style.visibility = 'hidden';
+        voice2.style.visibility = 'visible';
+      }
+      // Handles 3rd div
+      else if (scrollPos >= 9001 && scrollPos <= 20000) {
+        box2.style.visibility = 'hidden';
+        box3.style.visibility = 'visible';
 
-      box3.style.zIndex = '1';
-    }
+        myScale = scrollPos / 1000 - 9;
 
-    // Handles 4th div, Vertical Scroll
-    else if (scrollPos >= 6001 && scrollPos <= 8000) {
-      box3.style.visibility = 'hidden';
-      box4.style.visibility = 'visible';
+        console.log(myScale);
 
-      myScale = scrollPos / 1000 - 6;
+        box3.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
-      console.log(myScale);
+        box3.style.opacity = `${myScale}`;
 
-      box4.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
+        box3.style.zIndex = '1';
 
-      box4.style.opacity = `${myScale}`;
+        voice2.style.visibility = 'hidden';
+        voice3.style.visibility = 'visible';
+        box4.style.visibility = 'hidden';
+      }
 
-      box4.style.zIndex = '1';
-    }
+      // Handles 4th div, Vertical Scroll
+      else if (scrollPos >= 20000) {
+        box3.style.transition = 'all 3 s ease';
+        voice3.style.transition = 'all 3 s ease';
+        voice3.style.visibility = 'hidden';
+        box3.style.visibility = 'hidden';
+        // box4.style.transition = 'all 3 s ease';
+        box4.style.visibility = 'visible';
+        // myScale = scrollPos / 1000 - 20;
+        // console.log(myScale);
+
+        box4.style.top = 20000;
+        box4.style.left = 0;
+        box4.style.height = '2000px';
+        box4.style.zIndex = '1';
+        // box4.style.opacity = '1';
+      }
+    });
   });
-});
+})();
