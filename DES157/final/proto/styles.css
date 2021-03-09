@@ -1,3 +1,19 @@
+/*
+Font families
+
+font-family: 'Almarai', sans-serif;
+font-family: 'Architects Daughter', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Hanuman', serif;
+font-family: 'Indie Flower', cursive;
+font-family: 'Nosifer', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Sacramento', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Single Day', cursive;
+font-family: 'Stick', sans-serif; */
+
 /* Hidden and showing classes */
 .hidden {
   visibility: hidden;
@@ -9,18 +25,18 @@
   opacity: 1;
 }
 
-body {
-  position: relative;
-  height: 4000px;
-  background-color: white;
+html {
+  scroll-behavior: smooth;
 }
 
-/* footer {
-  visibility: hidden;
-} */
+body {
+  position: relative;
+  height: 120000px;
+  background-color: rgb(33, 33, 33);
+}
 
 .animationWrapper {
-  position: absolute;
+  position: relative;
   height: 100vh;
 }
 
@@ -49,8 +65,8 @@ section {
 
   height: 100%;
   text-align: center;
-  background-color: black;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: black;
   justify-content: center;
   align-items: center;
   justify-content: center;
@@ -79,36 +95,46 @@ section {
 }
 
 #box1 {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 1rem;
-  background-color: darkslategrey;
+  background-color: rgb(33, 33, 33);
   border-radius: 100%;
   transition-duration: 4s ease;
 }
 
 #box2 {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 1rem;
-  background-color: cadetblue;
-  border-radius: 100%;
+  background-color: rgb(33, 33, 33);
 }
 
 #box3 {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
   grid-gap: 1rem;
-  background-color: cadetblue;
-  border-radius: 100%;
+  background-color: rgb(33, 33, 33);
   align-items: center;
   justify-content: center;
 }
 
 #box4 {
+  position: absolute;
+  top: 20000px;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -118,12 +144,12 @@ section {
 #voice1,
 #voice2,
 #voice3 {
-  color: black;
   margin: 0 auto;
   visibility: hidden;
 }
 
 #voice1 {
+  color: rgb(211, 211, 211);
   display: flex;
   font-size: 165px;
   grid-column: 2;
@@ -133,18 +159,22 @@ section {
 }
 
 #voice2 {
-  display: flex;
-  font-size: 165px;
-  grid-column: 2/3;
-  grid-row: 3;
-  align-items: flex-start;
-  transition-duration: all 4s ease;
-}
-#voice3 {
+  color: rgba(211, 211, 211, 0.756);
+
   display: flex;
   font-size: 165px;
   grid-column: 2/2;
   grid-row: 2/2;
+  align-items: center;
+  transition-duration: all 4s ease;
+}
+#voice3 {
+  color: rgb(255, 252, 236);
+
+  display: flex;
+  font-size: 165px;
+  grid-column: 2/3;
+  grid-row: 3;
   align-items: flex-end;
 }
 
@@ -156,4 +186,48 @@ section {
 .fadeOut {
   opacity: 0;
   transition: opacity 3s ease-in-out;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+#welcomeBtn:hover {
+  cursor: pointer;
+}
+
+.finalBtn {
+  text-align: center;
+  height: 20px;
+  width: 55px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+/**************** Last Overlay ***************/
+
+#lastOverlay {
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  text-align: center;
+  background-color: whitesmoke;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 1366px;
+  margin: auto;
+}
+
+#lastOverlay > h1 {
+  flex: 100%;
+}
+
+#lastOverlay > main {
+  flex: 100%;
+  max-width: 1366px;
+  width: 100%;
 }
