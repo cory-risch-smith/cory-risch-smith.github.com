@@ -13,6 +13,14 @@
   var box2 = document.getElementById('box2');
   var box3 = document.getElementById('box3');
   var box4 = document.getElementById('box4');
+  var box5 = document.getElementById('box5');
+  var box6 = document.getElementById('box6');
+  var box7 = document.getElementById('box7');
+  var box8 = document.getElementById('box8');
+  var box9 = document.getElementById('box9');
+  var box10 = document.getElementById('box10');
+  var box11 = document.getElementById('box11');
+  var box12 = document.getElementById('box12');
   // var boxOneImg = document.getElementById('boxOneImg');
   var voice1 = document.getElementById('voice1');
   var voice2 = document.getElementById('voice2');
@@ -209,56 +217,56 @@
       }
       //Handles 6th Div
       else if (scrollPos >= 47001 && scrollPos <= 49000) {
-        box5.style.top = '47002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box6.style.top = '47002px';
+        box6.style.left = 0;
+        box6.style.height = '2000px';
+        box6.style.zIndex = '1';
       }
       //Handles 7th Div
       else if (scrollPos >= 49001 && scrollPos <= 51000) {
-        box5.style.top = '49002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box7.style.top = '49002px';
+        box7.style.left = 0;
+        box7.style.height = '2000px';
+        box7.style.zIndex = '1';
       }
       //Handles 8th Div
       else if (scrollPos >= 51001 && scrollPos <= 53000) {
-        box5.style.top = '51002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box8.style.top = '51002px';
+        box8.style.left = 0;
+        box8.style.height = '2000px';
+        box8.style.zIndex = '1';
       }
 
       //Handles 9th Div
       else if (scrollPos >= 53001 && scrollPos <= 55000) {
-        box5.style.top = '53002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box9.style.top = '53002px';
+        box9.style.left = 0;
+        box9.style.height = '2000px';
+        box9.style.zIndex = '1';
       }
 
       //Handles 10th Div
       else if (scrollPos >= 55001 && scrollPos <= 57000) {
-        box5.style.top = '55002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box10.style.top = '55002px';
+        box10.style.left = 0;
+        box10.style.height = '2000px';
+        box10.style.zIndex = '1';
       }
 
       //Handles 11th Div
       else if (scrollPos >= 57001 && scrollPos <= 59000) {
-        box5.style.top = '57002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box11.style.top = '57002px';
+        box11.style.left = 0;
+        box11.style.height = '2000px';
+        box11.style.zIndex = '1';
       }
 
       //Handles 12th Div
       else if (scrollPos >= 59001 && scrollPos <= 61000) {
-        box5.style.top = '59002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
+        box12.style.top = '59002px';
+        box12.style.left = 0;
+        box12.style.height = '2000px';
+        box12.style.zIndex = '1';
 
         // *****************Add show overlay into event AudioListener.
         finalBtn.addEventListener('click', function () {
