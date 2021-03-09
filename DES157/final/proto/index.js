@@ -35,6 +35,14 @@
     box2.style.transform = 'matrix(0,0,0,0,0,0)';
     box3.style.transform = 'matrix(0,0,0,0,0,0)';
     box4.style.visibility = 'hidden';
+    box5.style.visibility = 'hidden';
+    box6.style.visibility = 'hidden';
+    box7.style.visibility = 'hidden';
+    box8.style.visibility = 'hidden';
+    box9.style.visibility = 'hidden';
+    box10.style.visibility = 'hidden';
+    box11.style.visibility = 'hidden';
+    box12.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -210,6 +218,9 @@
       }
       //Handles 5th Div
       else if (scrollPos >= 45001 && scrollPos <= 47000) {
+        box4.style.visibility = 'hidden';
+        box5.style.visibility = 'visible';
+
         box5.style.top = '45002px';
         box5.style.left = 0;
         box5.style.height = '2000px';
@@ -217,6 +228,8 @@
       }
       //Handles 6th Div
       else if (scrollPos >= 47001 && scrollPos <= 49000) {
+        box5.style.visibility = 'hidden';
+        box6.style.visibility = 'visible';
         box6.style.top = '47002px';
         box6.style.left = 0;
         box6.style.height = '2000px';
@@ -224,6 +237,8 @@
       }
       //Handles 7th Div
       else if (scrollPos >= 49001 && scrollPos <= 51000) {
+        box6.style.visibility = 'hidden';
+        box7.style.visibility = 'visible';
         box7.style.top = '49002px';
         box7.style.left = 0;
         box7.style.height = '2000px';
@@ -231,6 +246,9 @@
       }
       //Handles 8th Div
       else if (scrollPos >= 51001 && scrollPos <= 53000) {
+        box7.style.visibility = 'hidden';
+        box8.style.visibility = 'visible';
+
         box8.style.top = '51002px';
         box8.style.left = 0;
         box8.style.height = '2000px';
@@ -239,6 +257,9 @@
 
       //Handles 9th Div
       else if (scrollPos >= 53001 && scrollPos <= 55000) {
+        box8.style.visibility = 'hidden';
+        box9.style.visibility = 'visible';
+
         box9.style.top = '53002px';
         box9.style.left = 0;
         box9.style.height = '2000px';
@@ -247,6 +268,9 @@
 
       //Handles 10th Div
       else if (scrollPos >= 55001 && scrollPos <= 57000) {
+        box9.style.visibility = 'hidden';
+        box10.style.visibility = 'visible';
+
         box10.style.top = '55002px';
         box10.style.left = 0;
         box10.style.height = '2000px';
@@ -255,6 +279,9 @@
 
       //Handles 11th Div
       else if (scrollPos >= 57001 && scrollPos <= 59000) {
+        box10.style.visibility = 'hidden';
+        box11.style.visibility = 'visible';
+
         box11.style.top = '57002px';
         box11.style.left = 0;
         box11.style.height = '2000px';
@@ -263,6 +290,9 @@
 
       //Handles 12th Div
       else if (scrollPos >= 59001 && scrollPos <= 61000) {
+        box11.style.visibility = 'hidden';
+        box12.style.visibility = 'visible';
+
         box12.style.top = '59002px';
         box12.style.left = 0;
         box12.style.height = '2000px';
