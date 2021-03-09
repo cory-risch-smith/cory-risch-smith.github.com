@@ -1,0 +1,19 @@
+header {
+  text-align: center;
+}
+
+body {
+  max-width: 1366px;
+  max-height: 768px;
+  padding-left: 50px;
+}
+main {
+  margin: 0 auto;
+}
+section {
+  margin: 100px auto;
+}
+
+section > div > h4 {
+  width: 50ch;
+}

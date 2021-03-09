@@ -1,7 +1,7 @@
 (function () {
-  alert(
-    'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
-  );
+  // alert(
+  //   'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
+  // );
 
   ('use strict');
   // console.log('happy hacking');
@@ -21,7 +21,6 @@
   var box10 = document.getElementById('box10');
   var box11 = document.getElementById('box11');
   var box12 = document.getElementById('box12');
-  // var boxOneImg = document.getElementById('boxOneImg');
   var voice1 = document.getElementById('voice1');
   var voice2 = document.getElementById('voice2');
   var voice3 = document.getElementById('voice3');

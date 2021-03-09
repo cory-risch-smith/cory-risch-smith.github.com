@@ -156,7 +156,7 @@ section {
   height: 100%;
   display: flex;
   position: absolute;
-
+  top: 20000px;
   left: 0;
   font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
