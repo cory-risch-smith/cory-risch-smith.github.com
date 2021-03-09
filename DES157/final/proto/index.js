@@ -27,7 +27,6 @@
     box2.style.transform = 'matrix(0,0,0,0,0,0)';
     box3.style.transform = 'matrix(0,0,0,0,0,0)';
     box4.style.visibility = 'hidden';
-    // lastOverlay.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -65,7 +64,6 @@
         box2.style.visibility = 'visible';
 
         myScale = scrollPos / 1000 - 6;
-        console.log(typeof myScale);
 
         console.log(myScale);
 
@@ -186,7 +184,7 @@
       }
 
       // Handles 4th div, Vertical Scroll
-      else if (scrollPos >= 43001) {
+      else if (scrollPos >= 43001 && scrollPos <= 45000) {
         box3.style.transition = 'all 3 s ease';
         voice3.style.transition = 'all 3 s ease';
         voice3.style.visibility = 'hidden';
@@ -201,18 +199,71 @@
         box4.style.height = '2000px';
         box4.style.zIndex = '1';
         // box4.style.opacity = '1';
+      }
+      //Handles 5th Div
+      else if (scrollPos >= 45001 && scrollPos <= 47000) {
+        box5.style.top = '45002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+      //Handles 6th Div
+      else if (scrollPos >= 47001 && scrollPos <= 49000) {
+        box5.style.top = '47002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+      //Handles 7th Div
+      else if (scrollPos >= 49001 && scrollPos <= 51000) {
+        box5.style.top = '49002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+      //Handles 8th Div
+      else if (scrollPos >= 51001 && scrollPos <= 53000) {
+        box5.style.top = '51002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+
+      //Handles 9th Div
+      else if (scrollPos >= 53001 && scrollPos <= 55000) {
+        box5.style.top = '53002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+
+      //Handles 10th Div
+      else if (scrollPos >= 55001 && scrollPos <= 57000) {
+        box5.style.top = '55002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+
+      //Handles 11th Div
+      else if (scrollPos >= 57001 && scrollPos <= 59000) {
+        box5.style.top = '57002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
+      }
+
+      //Handles 12th Div
+      else if (scrollPos >= 59001 && scrollPos <= 61000) {
+        box5.style.top = '59002px';
+        box5.style.left = 0;
+        box5.style.height = '2000px';
+        box5.style.zIndex = '1';
 
         // *****************Add show overlay into event AudioListener.
         finalBtn.addEventListener('click', function () {
           // **********FIX ME *****************
-          box1.style.visibility = 'hidden';
-          box2.style.visibility = 'hidden';
-          box3.style.visibility = 'hidden';
-          box4.style.visibility = 'hidden';
-          lastOverlay.style.visibility = 'visible';
-          lastOverlay.style.zIndex = '100';
-          lastOverlay.style.top = '0';
-          lastOverlay.style.left = '0';
+          lastOverlay.className('showing');
         });
       }
     });

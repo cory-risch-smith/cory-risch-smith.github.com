@@ -20,11 +20,14 @@ font-family: 'Stick', sans-serif;
 .hidden {
   visibility: hidden;
   opacity: 0;
+  height: 0;
 }
 
 .showing {
-  visibility: showing;
+  visibility: visible;
   opacity: 1;
+  height: 100vh;
+  z-index: 100;
 }
 
 html {
@@ -64,7 +67,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
-
   height: 100%;
   text-align: center;
   background-color: whitesmoke;
@@ -94,15 +96,12 @@ section {
   width: fit-content;
   margin: auto;
   margin-top: 20px;
-
   grid-column: 2/2;
   grid-row: 3;
 }
 
 #box1 {
   position: fixed;
-  top: 0;
-  left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
@@ -110,6 +109,7 @@ section {
   background-color: rgb(33, 33, 33);
   border-radius: 100%;
   transition-duration: 4s ease;
+  text-align: center;
 }
 
 #box2 {
@@ -137,13 +137,147 @@ section {
 }
 
 #box4 {
+  height: 100%;
+  display: flex;
   position: absolute;
   top: 20000px;
   left: 0;
-  display: flex;
-  flex-wrap: wrap;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
   justify-content: center;
-  background-color: cornflowerblue;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box5 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 45002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box6 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 47002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box7 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 49002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box8 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 51002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box9 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 53002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box10 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 55002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box11 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 57002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 125px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box12 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  top: 59002px;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 80px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
 }
 
 #voice1,
@@ -165,7 +299,7 @@ section {
 }
 
 #voice2 {
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Almarai', sans-serif;
   color: rgba(211, 211, 211, 0.756);
   display: flex;
   font-size: 165px;
@@ -175,6 +309,7 @@ section {
   transition-duration: all 4s ease;
 }
 #voice3 {
+  font-family: 'Almarai', sans-serif;
   color: rgb(255, 252, 236);
   display: flex;
   font-size: 165px;
@@ -219,10 +354,11 @@ footer {
 /**************** Last Overlay ***************/
 
 #lastOverlay {
+  visibility: hidden;
+  height: 0;
   display: flex;
   flex: 100%;
   flex-wrap: wrap;
-  height: 100vh;
   text-align: center;
   background-color: whitesmoke;
   color: black;
@@ -231,6 +367,7 @@ footer {
   justify-content: center;
   max-width: 1366px;
   margin: auto;
+  z-index: 0;
 }
 
 #lastOverlay > h1 {
