@@ -12,7 +12,9 @@ font-family: 'Rock Salt', cursive;
 font-family: 'Sacramento', cursive;
 font-family: 'Shadows Into Light', cursive;
 font-family: 'Single Day', cursive;
-font-family: 'Stick', sans-serif; */
+font-family: 'Stick', sans-serif;
+
+*/
 
 /* Hidden and showing classes */
 .hidden {
@@ -84,12 +86,15 @@ section {
   width: 100%;
   grid-column: 2/2;
   grid-row: 2;
+  margin-top: 20px;
 }
 
 #overlay > button {
   font-size: 100px;
   width: fit-content;
   margin: auto;
+  margin-top: 20px;
+
   grid-column: 2/2;
   grid-row: 3;
 }
@@ -149,6 +154,7 @@ section {
 }
 
 #voice1 {
+  font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
   display: flex;
   font-size: 165px;
@@ -159,8 +165,8 @@ section {
 }
 
 #voice2 {
+  font-family: 'Architects Daughter', cursive;
   color: rgba(211, 211, 211, 0.756);
-
   display: flex;
   font-size: 165px;
   grid-column: 2/2;
@@ -170,7 +176,6 @@ section {
 }
 #voice3 {
   color: rgb(255, 252, 236);
-
   display: flex;
   font-size: 165px;
   grid-column: 2/3;
@@ -192,8 +197,15 @@ footer {
   margin-top: 50px;
 }
 
+#welcomeBtn {
+  padding: 45px;
+  box-shadow: 0px 0px 51px -16px rgba(0, 0, 0, 0.75) inset;
+  border-radius: 10px;
+}
+
 #welcomeBtn:hover {
   cursor: pointer;
+  box-shadow: 0px 0px 53px -3px rgba(0, 0, 0, 0.75) inset;
 }
 
 .finalBtn {
@@ -208,9 +220,8 @@ footer {
 
 #lastOverlay {
   display: flex;
+  flex: 100%;
   flex-wrap: wrap;
-  top: 0;
-  left: 0;
   height: 100vh;
   text-align: center;
   background-color: whitesmoke;
@@ -223,11 +234,23 @@ footer {
 }
 
 #lastOverlay > h1 {
-  flex: 100%;
+  width: 100%;
 }
 
 #lastOverlay > main {
+  display: flex;
   flex: 100%;
+  margin: auto;
   max-width: 1366px;
-  width: 100%;
+  width: 60ch;
+  padding-left: 375px;
+  padding-right: 375px;
+}
+
+#lastOverlay > footer {
+}
+
+#lastOverlay > footer > p > a {
+  color: black;
+  text-decoration: none;
 }

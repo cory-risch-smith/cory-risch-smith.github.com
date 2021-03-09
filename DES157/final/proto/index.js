@@ -1,7 +1,9 @@
 (function () {
-  // alert("Welcome to this simulation.");
+  // alert(
+  //   'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
+  // );
 
-  'use strict';
+  ('use strict');
   // console.log('happy hacking');
 
   var scrollPos = 0;
@@ -25,7 +27,7 @@
     box2.style.transform = 'matrix(0,0,0,0,0,0)';
     box3.style.transform = 'matrix(0,0,0,0,0,0)';
     box4.style.visibility = 'hidden';
-    lastOverlay.style.visibility = 'hidden';
+    // lastOverlay.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -162,7 +164,7 @@
         }
       }
       // Handles 3rd div
-      else if (scrollPos >= 12001 && scrollPos <= 55500) {
+      else if (scrollPos >= 12001 && scrollPos <= 43000) {
         box2.style.visibility = 'hidden';
         box3.style.visibility = 'visible';
 
@@ -184,7 +186,7 @@
       }
 
       // Handles 4th div, Vertical Scroll
-      else if (scrollPos >= 55501) {
+      else if (scrollPos >= 43001) {
         box3.style.transition = 'all 3 s ease';
         voice3.style.transition = 'all 3 s ease';
         voice3.style.visibility = 'hidden';
@@ -194,7 +196,7 @@
         // myScale = scrollPos / 1000 - 20;
         // console.log(myScale);
 
-        box4.style.top = '55502px';
+        box4.style.top = '43002px';
         box4.style.left = 0;
         box4.style.height = '2000px';
         box4.style.zIndex = '1';
@@ -202,20 +204,15 @@
 
         // *****************Add show overlay into event AudioListener.
         finalBtn.addEventListener('click', function () {
-          window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth',
-          });
-
           // **********FIX ME *****************
           box1.style.visibility = 'hidden';
           box2.style.visibility = 'hidden';
           box3.style.visibility = 'hidden';
           box4.style.visibility = 'hidden';
-
           lastOverlay.style.visibility = 'visible';
-          lastOverlay.style.zIndex = '2';
+          lastOverlay.style.zIndex = '100';
+          lastOverlay.style.top = '0';
+          lastOverlay.style.left = '0';
         });
       }
     });
