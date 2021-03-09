@@ -1,7 +1,7 @@
 (function () {
-  // alert(
-  //   'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
-  // );
+  alert(
+    'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
+  );
 
   ('use strict');
   // console.log('happy hacking');
