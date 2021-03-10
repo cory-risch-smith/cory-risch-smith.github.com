@@ -5,7 +5,6 @@
 
   ('use strict');
   // console.log('happy hacking');
-
   var scrollPos = 0;
 
   var overlay = document.getElementById('overlay');
@@ -27,7 +26,7 @@
   var voice2 = document.getElementById('voice2');
   var voice3 = document.getElementById('voice3');
   var overlayBtn = document.querySelector('.btn');
-  var finalBtn = document.getElementById('top');
+  var finalBtn = document.getElementById('finalBtn');
   var lastOverlay = document.getElementById('lastOverlay');
 
   window.addEventListener('load', function () {
@@ -54,14 +53,14 @@
 
     window.addEventListener('scroll', function () {
       scrollPos = [window.scrollY];
-      console.log(scrollPos);
+      // console.log(scrollPos);
 
       // Handles 1st div
       if (scrollPos >= 0 && scrollPos <= 6000) {
         box1.style.visibility = 'visible';
 
         var myScale = scrollPos / 1000;
-        console.log(myScale);
+        // console.log(myScale);
 
         box1.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
@@ -313,7 +312,6 @@
 
         finalBtn.addEventListener('click', function () {
           // **********FIX ME *****************
-          lastOverlay.className('showing');
         });
       }
 
