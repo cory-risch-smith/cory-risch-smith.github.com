@@ -36,7 +36,7 @@ html {
 
 body {
   position: relative;
-  height: 61000px;
+  height: 63000px;
   background-color: rgb(33, 33, 33);
 }
 
@@ -265,6 +265,21 @@ section {
 }
 
 #box12 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 65px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+}
+
+#box13 {
   height: 100%;
   display: flex;
   position: absolute;

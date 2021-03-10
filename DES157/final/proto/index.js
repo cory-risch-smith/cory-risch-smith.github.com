@@ -21,6 +21,8 @@
   var box10 = document.getElementById('box10');
   var box11 = document.getElementById('box11');
   var box12 = document.getElementById('box12');
+  var box13 = document.getElementById('box13');
+
   var voice1 = document.getElementById('voice1');
   var voice2 = document.getElementById('voice2');
   var voice3 = document.getElementById('voice3');
@@ -42,6 +44,7 @@
     box10.style.visibility = 'hidden';
     box11.style.visibility = 'hidden';
     box12.style.visibility = 'hidden';
+    box13.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -296,13 +299,25 @@
         box12.style.left = 0;
         box12.style.height = '2000px';
         box12.style.zIndex = '1';
+      }
 
-        // *****************Add show overlay into event AudioListener.
+      //Handles 13th Div
+      else if (scrollPos >= 61001 && scrollPos <= 63000) {
+        box12.style.visibility = 'hidden';
+        box13.style.visibility = 'visible';
+
+        box13.style.top = '61002px';
+        box13.style.left = 0;
+        box13.style.height = '2000px';
+        box13.style.zIndex = '1';
+
         finalBtn.addEventListener('click', function () {
           // **********FIX ME *****************
           lastOverlay.className('showing');
         });
       }
+
+      // *****************Add show overlay into event AudioListener.
     });
   });
 })();
