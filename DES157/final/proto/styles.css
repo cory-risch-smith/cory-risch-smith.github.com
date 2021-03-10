@@ -280,7 +280,6 @@ section {
 }
 
 #box13 {
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(3, auto);
@@ -295,6 +294,41 @@ section {
   text-align: center;
   align-items: center;
   background-color: rgb(30, 29, 29);
+}
+
+#box13 > h2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#box13 > button {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+  border-radius: 15px;
+  outline: none;
+}
+
+#box13 > button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 26px 0px rgb(251, 252, 255);
+  outline: none;
+}
+
+#box13 > footer {
+  font-size: 16px;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#box13 > footer > p > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+#box13 > footer > p > a:hover {
+  /* box-shadow: 0px 0px 64px -3px rgba(255, 255, 255, 0.98); */
+  color: rgb(0, 85, 205);
 }
 
 #voice1,
