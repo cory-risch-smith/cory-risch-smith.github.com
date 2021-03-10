@@ -1,8 +1,4 @@
 (function () {
-  // alert(
-  //   'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
-  // );
-
   ('use strict');
   // console.log('happy hacking');
   var scrollPos = 0;
@@ -49,11 +45,14 @@
       overlay.className = 'box hidden';
       overlay.style.width = '0px';
       overlay.style.height = '0px';
+      alert(
+        'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
+      );
     });
 
     window.addEventListener('scroll', function () {
       scrollPos = [window.scrollY];
-      // console.log(scrollPos);
+      console.log(scrollPos);
 
       // Handles 1st div
       if (scrollPos >= 0 && scrollPos <= 6000) {
@@ -82,7 +81,7 @@
 
         myScale = scrollPos / 1000 - 6;
 
-        console.log(myScale);
+        // console.log(myScale);
 
         box2.style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
@@ -143,7 +142,6 @@
         //     voice2.style.opacity = 1;
         //     break;
         // }
-
         if (scrollPos === 10500) {
           voice2.style.opacity = '0.95';
         } else if (scrollPos === 10600) {

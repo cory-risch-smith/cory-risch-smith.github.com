@@ -30,11 +30,27 @@ font-family: 'Stick', sans-serif;
   z-index: 100;
 }
 
+/* Possibly use this for scroll opacity fade in and out */
+
+/* .fadeIn {
+  animation: fadeIn ease 10s;
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  } */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  max-width: 1366px;
+  font-family: 'Almarai', sans-serif;
+  margin: 0 auto;
   position: relative;
   height: 63000px;
   background-color: rgb(33, 33, 33);
@@ -43,6 +59,12 @@ body {
 .animationWrapper {
   position: relative;
   height: 100vh;
+}
+
+
+#wrapper > p {
+  text-align: center;
+  color: aliceblue;
 }
 
 section {
