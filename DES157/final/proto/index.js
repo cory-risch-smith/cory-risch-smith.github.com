@@ -31,15 +31,7 @@
     box2.style.transform = 'matrix(0,0,0,0,0,0)';
     box3.style.transform = 'matrix(0,0,0,0,0,0)';
     box4.style.visibility = 'hidden';
-    box5.style.visibility = 'hidden';
-    box6.style.visibility = 'hidden';
-    box7.style.visibility = 'hidden';
-    box8.style.visibility = 'hidden';
-    box9.style.visibility = 'hidden';
-    box10.style.visibility = 'hidden';
-    box11.style.visibility = 'hidden';
-    box12.style.visibility = 'hidden';
-    box13.style.visibility = 'hidden';
+    // box13.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -70,6 +62,7 @@
         box1.style.boxShadow = `0px 0px 28px ${scrollPos}px rgba(0,0,0,0.23)`;
 
         voice1.style.visibility = 'visible';
+        voice1.style.opacity = `${myScale * 0.5}`;
       }
 
       // Handles 2nd div
@@ -91,6 +84,7 @@
 
         voice1.style.visibility = 'hidden';
         voice2.style.visibility = 'visible';
+        voice2.style.opacity = `${myScale * 0.5}`;
 
         // switch (myScale) {
         //   case 4.5:
@@ -177,17 +171,17 @@
         }
       }
       // Handles 3rd div
-      else if (scrollPos >= 12001 && scrollPos <= 43000) {
+      else if (scrollPos >= 12001 && scrollPos <= 24000) {
         box2.style.visibility = 'hidden';
         box3.style.visibility = 'visible';
 
         myScale = scrollPos / 1000 - 12;
 
-        console.log(myScale);
+        // console.log(myScale);
 
-        box3.style.transform = `matrix(${myScale / 25},0,0,${myScale / 25},${
-          myScale / 25
-        },${myScale / 25})`;
+        box3.style.transform = `matrix(${myScale / 10},0,0,${myScale / 10},${
+          myScale / 10
+        },${myScale / 10})`;
 
         box3.style.opacity = `${myScale}`;
 
@@ -199,114 +193,42 @@
       }
 
       // Handles 4th div, Vertical Scroll
-      else if (scrollPos >= 43001 && scrollPos <= 45000) {
-        box3.style.transition = 'all 3 s ease';
-        voice3.style.transition = 'all 3 s ease';
+      else if (scrollPos >= 24001 && scrollPos <= 44000) {
         voice3.style.visibility = 'hidden';
         box3.style.visibility = 'hidden';
-        // box4.style.transition = 'all 3 s ease';
         box4.style.visibility = 'visible';
         // myScale = scrollPos / 1000 - 20;
         // console.log(myScale);
 
-        box4.style.top = '43002px';
-        box4.style.left = 0;
-        box4.style.height = '2000px';
-        box4.style.zIndex = '1';
-        // box4.style.opacity = '1';
-      }
-      //Handles 5th Div
-      else if (scrollPos >= 45001 && scrollPos <= 47000) {
-        box4.style.visibility = 'hidden';
-        box5.style.visibility = 'visible';
+        box4.classList.add('vertical');
+        box4.style.top = '24002px';
 
-        box5.style.top = '45002px';
-        box5.style.left = 0;
-        box5.style.height = '2000px';
-        box5.style.zIndex = '1';
-      }
-      //Handles 6th Div
-      else if (scrollPos >= 47001 && scrollPos <= 49000) {
-        box5.style.visibility = 'hidden';
-        box6.style.visibility = 'visible';
-        box6.style.top = '47002px';
-        box6.style.left = 0;
-        box6.style.height = '2000px';
-        box6.style.zIndex = '1';
-      }
-      //Handles 7th Div
-      else if (scrollPos >= 49001 && scrollPos <= 51000) {
-        box6.style.visibility = 'hidden';
-        box7.style.visibility = 'visible';
-        box7.style.top = '49002px';
-        box7.style.left = 0;
-        box7.style.height = '2000px';
-        box7.style.zIndex = '1';
-      }
-      //Handles 8th Div
-      else if (scrollPos >= 51001 && scrollPos <= 53000) {
-        box7.style.visibility = 'hidden';
-        box8.style.visibility = 'visible';
+        box5.classList.add('vertical');
+        box5.style.top = '26002px';
 
-        box8.style.top = '51002px';
-        box8.style.left = 0;
-        box8.style.height = '2000px';
-        box8.style.zIndex = '1';
-      }
+        box6.classList.add('vertical');
+        box6.style.top = '28002px';
 
-      //Handles 9th Div
-      else if (scrollPos >= 53001 && scrollPos <= 55000) {
-        box8.style.visibility = 'hidden';
-        box9.style.visibility = 'visible';
+        box7.classList.add('vertical');
+        box7.style.top = '30002px';
 
-        box9.style.top = '53002px';
-        box9.style.left = 0;
-        box9.style.height = '2000px';
-        box9.style.zIndex = '1';
-      }
+        box8.classList.add('vertical');
+        box8.style.top = '32002px';
 
-      //Handles 10th Div
-      else if (scrollPos >= 55001 && scrollPos <= 57000) {
-        box9.style.visibility = 'hidden';
-        box10.style.visibility = 'visible';
+        box9.classList.add('vertical');
+        box9.style.top = '34002px';
 
-        box10.style.top = '55002px';
-        box10.style.left = 0;
-        box10.style.height = '2000px';
-        box10.style.zIndex = '1';
-      }
+        box10.classList.add('vertical');
+        box10.style.top = '36002px';
 
-      //Handles 11th Div
-      else if (scrollPos >= 57001 && scrollPos <= 59000) {
-        box10.style.visibility = 'hidden';
-        box11.style.visibility = 'visible';
+        box11.classList.add('vertical');
+        box11.style.top = '38002px';
 
-        box11.style.top = '57002px';
-        box11.style.left = 0;
-        box11.style.height = '2000px';
-        box11.style.zIndex = '1';
-      }
+        box12.classList.add('vertical');
+        box12.style.top = '40002px';
 
-      //Handles 12th Div
-      else if (scrollPos >= 59001 && scrollPos <= 61000) {
-        box11.style.visibility = 'hidden';
-        box12.style.visibility = 'visible';
-
-        box12.style.top = '59002px';
-        box12.style.left = 0;
-        box12.style.height = '2000px';
-        box12.style.zIndex = '1';
-      }
-
-      //Handles 13th Div
-      else if (scrollPos >= 61001 && scrollPos <= 63000) {
-        box12.style.visibility = 'hidden';
-        box13.style.visibility = 'visible';
-
-        box13.style.top = '61002px';
-        box13.style.left = 0;
-        box13.style.height = '2000px';
-        box13.style.zIndex = '1';
+        box13.classList.add('vertical');
+        box13.style.top = '42002px';
 
         finalBtn.addEventListener('click', function () {
           // **********FIX ME *****************
