@@ -410,17 +410,19 @@ section {
 /**************** Last Overlay ***************/
 
 #box14 {
-  height: 100vh;
+  position: absolute;
   top: 43000px;
+  height: 100%;
   left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 35px;
+  transition-duration: all 4s ease;
+  justify-content: center;
   text-align: center;
-  background-color: whitesmoke;
-  color: #212121;
-  justify-content: center;
   align-items: center;
-  justify-content: center;
+  background-color: #212121;
   max-width: 1366px;
-  margin: auto;
   z-index: 1;
 }
 
