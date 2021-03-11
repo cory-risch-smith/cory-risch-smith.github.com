@@ -42,6 +42,7 @@
     box12.style.visibility = 'hidden';
     box13.style.visibility = 'hidden';
     box14.style.visibility = 'hidden';
+    box14.style.height = '0';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -246,16 +247,15 @@
 
         box13.classList.add('vertical');
         box13.style.top = '42002px';
-
-        finalBtn.addEventListener('click', function () {
-          box13.classList.add('fadeOut');
-          box13.style.visibility = 'hidden';
-          box14.style.visibility = 'visible';
-          // **********FIX ME *****************
-        });
+        box13.style.height = '768px';
       }
+      finalBtn.addEventListener('click', function () {
+        box13.classList.add('fadeOut');
+        box13.style.visibility = 'hidden';
+        box14.style.visibility = 'visible';
+        // **********FIX ME *****************
+      });
 
-      // *****************Add show overlay into event AudioListener.
     });
   });
 })();
