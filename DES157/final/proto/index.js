@@ -31,7 +31,15 @@
     box2.style.transform = 'matrix(0,0,0,0,0,0)';
     box3.style.transform = 'matrix(0,0,0,0,0,0)';
     box4.style.visibility = 'hidden';
-    // box13.style.visibility = 'hidden';
+    box5.style.visibility = 'hidden';
+    box6.style.visibility = 'hidden';
+    box7.style.visibility = 'hidden';
+    box8.style.visibility = 'hidden';
+    box9.style.visibility = 'hidden';
+    box10.style.visibility = 'hidden';
+    box11.style.visibility = 'hidden';
+    box12.style.visibility = 'hidden';
+    box13.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -197,6 +205,15 @@
         voice3.style.visibility = 'hidden';
         box3.style.visibility = 'hidden';
         box4.style.visibility = 'visible';
+        box5.style.visibility = 'visible';
+        box6.style.visibility = 'visible';
+        box7.style.visibility = 'visible';
+        box8.style.visibility = 'visible';
+        box9.style.visibility = 'visible';
+        box10.style.visibility = 'visible';
+        box11.style.visibility = 'visible';
+        box12.style.visibility = 'visible';
+        box13.style.visibility = 'visible';
         // myScale = scrollPos / 1000 - 20;
         // console.log(myScale);
 
