@@ -17,6 +17,7 @@
   var box11 = document.getElementById('box11');
   var box12 = document.getElementById('box12');
   var box13 = document.getElementById('box13');
+  var box14 = document.getElementById('box14');
 
   var voice1 = document.getElementById('voice1');
   var voice2 = document.getElementById('voice2');
@@ -40,6 +41,7 @@
     box11.style.visibility = 'hidden';
     box12.style.visibility = 'hidden';
     box13.style.visibility = 'hidden';
+    box14.style.visibility = 'hidden';
 
     overlayBtn.addEventListener('click', function () {
       overlay.className = 'box hidden';
@@ -66,8 +68,6 @@
         box1.style.opacity = `${myScale}`;
 
         box1.style.zIndex = '1';
-
-        box1.style.boxShadow = `0px 0px 28px ${scrollPos}px rgba(0,0,0,0.23)`;
 
         voice1.style.visibility = 'visible';
         voice1.style.opacity = `${myScale * 0.5}`;
@@ -248,6 +248,9 @@
         box13.style.top = '42002px';
 
         finalBtn.addEventListener('click', function () {
+          box13.classList.add('fadeOut');
+          box13.style.visibility = 'hidden';
+          box14.style.visibility = 'visible';
           // **********FIX ME *****************
         });
       }
