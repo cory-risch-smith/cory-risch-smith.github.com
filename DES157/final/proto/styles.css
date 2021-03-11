@@ -410,6 +410,9 @@ section {
 /**************** Last Overlay ***************/
 
 #box14 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
   position: absolute;
   top: 43000px;
   height: 100%;
@@ -427,10 +430,14 @@ section {
 }
 
 #box14 > h1 {
+  grid-column: 2;
+  grid-row: 1;
   width: 100%;
 }
 
 #box14 > main {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   flex: 100%;
   margin: auto;
@@ -441,6 +448,8 @@ section {
 }
 
 #box14 > footer {
+  grid-column: 2;
+  grid-row: 3;
 }
 
 #box14 > footer > p > a {
