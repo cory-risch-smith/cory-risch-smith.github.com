@@ -20,6 +20,7 @@
   </head>
 
   <body>
+    <!-- Add some kind of animation for the scroll Icon -->
     <header>Scroll</header>
     <main>
       <!-- First Voice Section -->
@@ -30,64 +31,64 @@
       </article>
 
       <!-- Second Voice Section -->
-      <article id="box1" class="box hide">
+      <article id="box1" class="box">
         <h2 id="v1" class="voices">Is.</h2>
       </article>
 
       <!-- Third Voice Section -->
-      <article id="box2" class="box hide">
+      <article id="box2" class="box">
         <h2 id="v2" class="voices">Depression.</h2>
       </article>
 
       <!-- Fourth Voice Section -->
-      <article id="box3" class="box hide">
+      <article id="box3" class="box">
         <h2 id="v3" class="voices">It never seems to end right?</h2>
       </article>
 
       <!-- Fifth Voice Section -->
-      <article id="box4" class="box hide">
+      <article id="box4" class="box">
         <h2 id="v4" class="voices">It just keeps going,</h2>
       </article>
 
       <!-- Sixth Voice Section -->
-      <article id="box5" class="box hide">
+      <article id="box5" class="box">
         <h2 id="v5" class="voices">and going,</h2>
       </article>
 
       <!-- Seventh Voice Section -->
-      <article id="box6" class="box hide">
+      <article id="box6" class="box">
         <h2 id="v6" class="voices">and going.</h2>
       </article>
 
       <!-- Eighth Voice Section -->
-      <article id="box7" class="box hide">
+      <article id="box7" class="box">
         <h2 id="v7" class="voices">It feels like there is no bottom,</h2>
       </article>
 
       <!-- Ninth Voice Section -->
-      <article id="box8" class="box hide">
+      <article id="box8" class="box">
         <h2 id="v8" class="voices">no hope,</h2>
       </article>
 
       <!-- Tenth Voice Section -->
-      <article id="box9" class="box hide">
+      <article id="box9" class="box">
         <h2 id="v9" class="voices">no floor to stand on,</h2>
       </article>
 
       <!-- Eleventh Voice Section -->
-      <article id="box10" class="box hide">
+      <article id="box10" class="box">
         <h2 id="v10" class="voices">no light at the end of tunnel.</h2>
       </article>
 
       <!-- Twelvth Voice Section -->
-      <article id="box11" class="box hide">
+      <article id="box11" class="box">
         <h2 id="v11" class="voices">
           But this message is to let you know you are not alone.
         </h2>
       </article>
 
       <!-- Thirteenth Voice Section -->
-      <article id="box12" class="box hide">
+      <article id="box12" class="box">
         <h2 id="v12" class="voices">There is a way out.</h2>
 
         <button id="finalBtn">Can I show you?</button>
@@ -97,8 +98,9 @@
       <!-- This one only gets absoulte position, 100vw, 100vh, display: none in the css -->
       <!-- Then, when you display it in the js, disable scrolling on body -->
       <!-- Add a close button, when user clicks close, re-enable scroll on body (overflow:auto)...this is where you could potentailly send users to the top of the page with automatic scroll up? -->
-      <article id="namiOverlay" class="box hide">
+      <article id="namiOverlay" class="box">
         <section>
+          <button id="closeBtn">close</button>
           <h1 id="v13" class="voices">You're Not Alone!</h1>
         </section>
         <!-- Better called section or article, not main -->

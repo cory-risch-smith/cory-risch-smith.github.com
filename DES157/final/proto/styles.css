@@ -50,7 +50,6 @@ article {
 /* boxes */
 
 .box {
-  display: flex;
   position: fixed;
   transform: translate3d(0px, 0px, 0px);
   width: 100%;
@@ -58,18 +57,22 @@ article {
   height: 1000px;
   top: 0;
   left: 0;
+  z-index: 1;
   margin: auto;
   justify-content: center;
   text-align: center;
   font-size: 35px;
   font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
-  background-color: #212121;
 
   /* Properties that allow for a smooth transition for the overlay */
   transition-property: opacity, visibility;
   transition-duration: 3s;
   transition-timing-function: all ease;
+}
+
+h2 {
+  font-size: 50px !important;
 }
 
 #box0,
@@ -148,20 +151,18 @@ article {
 /* Each voice has different flex positioning */
 
 #v0 {
-  align-items: flex-start;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 #v1 {
-  align-items: center;
+  grid-column: 2;
+  grid-row: 3;
 }
 
 #v2 {
-  align-items: flex-end;
-}
-
-h2 {
-  width: 50ch;
-  font-size: 50px !important;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 footer {
@@ -245,7 +246,9 @@ footer {
 }
 
 .show {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
 }
 
 /* Consider removing some of the hidden and showing? */
