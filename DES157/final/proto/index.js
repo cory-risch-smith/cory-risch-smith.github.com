@@ -8,6 +8,8 @@
   var boxes = document.querySelectorAll('.box');
   console.log(boxes);
 
+  var voices = document.querySelectorAll('.voices');
+
   var v0 = document.getElementById('v0');
   var v1 = document.getElementById('v1');
   var v2 = document.getElementById('v2');
@@ -73,51 +75,37 @@
     }
 
     // Handles 4th div, Vertical Scroll
-    else if (scrollPos >= 9001 && scrollPos <= 44000) {
-      voice3.style.visibility = 'hidden';
-      box3.style.visibility = 'hidden';
-      box4.style.visibility = 'visible';
-      box5.style.visibility = 'visible';
-      box6.style.visibility = 'visible';
-      box7.style.visibility = 'visible';
-      box8.style.visibility = 'visible';
-      box9.style.visibility = 'visible';
-      box10.style.visibility = 'visible';
-      box11.style.visibility = 'visible';
-      box12.style.visibility = 'visible';
-      box13.style.visibility = 'visible';
-      // myScale = scrollPos / 1000 - 20;
-      // console.log(myScale);
+    else if (scrollPos >= 8501 && scrollPos <= 44000) {
+      for (i = 3; i < voices.length; i++) {
+        boxes[i].classList.add('show');
+      }
 
-      box3.classList.add('vertical');
-      box3.style.top = '24002px';
+      // Changes opacity of main message (word:depression)
+      v1.style.opacity = `${1 - myScale * 1.5}`;
 
-      box4.classList.add('vertical');
-      box4.style.top = '26002px';
+      for (i = 3; i > boxes.length; i++) {
+        boxes[i].classList.add('show');
+      }
 
-      box5.classList.add('vertical');
-      box5.style.top = '28002px';
+      box3.style.top = '10500px';
 
-      box6.classList.add('vertical');
-      box6.style.top = '30002px';
+      box4.style.top = '12500px';
 
-      box7.classList.add('vertical');
-      box7.style.top = '32002px';
+      box5.style.top = '14500px';
 
-      box8.classList.add('vertical');
-      box8.style.top = '34002px';
+      box6.style.top = '16500px';
 
-      box9.classList.add('vertical');
-      box9.style.top = '36002px';
+      box7.style.top = '18500px';
 
-      box10.classList.add('vertical');
-      box10.style.top = '38002px';
+      box8.style.top = '20500px';
 
-      box11.classList.add('vertical');
-      box11.style.top = '40002px';
+      box9.style.top = '22500px';
 
-      box12.classList.add('vertical');
-      box12.style.top = '42002px';
+      box10.style.top = '24500px';
+
+      box11.style.top = '26500px';
+
+      box12.style.top = '28500px';
       box12.style.height = '768px';
     }
   }
