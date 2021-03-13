@@ -73,8 +73,11 @@ article {
   transition-timing-function: all ease;
 }
 
-#box0 {
+#box0,
+#box1,
+#box2 {
   border-radius: 100%;
+  transform: matrix(0, 0, 0, 0, 0, 0);
 }
 
 /* Look into having to be placed at different top positions? */
@@ -246,7 +249,7 @@ footer {
   display: block;
 }
 
-/*********** To be assigned using JS ***********/
+/* Consider removing some of the hidden and showing? */
 
 .hidden {
   visibility: hidden;

@@ -6,48 +6,17 @@
 
   // try using the querySelectorAll method
   var boxes = document.querySelectorAll('.box');
+  console.log(boxes);
 
-  var box0 = document.getElementById('box0');
-  var box2 = document.getElementById('box2');
-  var box3 = document.getElementById('box3');
-  var box4 = document.getElementById('box4');
-  var box5 = document.getElementById('box5');
-  var box6 = document.getElementById('box6');
-  var box7 = document.getElementById('box7');
-  var box8 = document.getElementById('box8');
-  var box9 = document.getElementById('box9');
-  var box10 = document.getElementById('box10');
-  var box11 = document.getElementById('box11');
-  var box12 = document.getElementById('box12');
-  var box13 = document.getElementById('box13');
-  var box14 = document.getElementById('box14');
   var v0 = document.getElementById('v0');
   var v1 = document.getElementById('v1');
   var v2 = document.getElementById('v2');
   var finalBtn = document.getElementById('finalBtn');
-  var lastOverlay = document.getElementById('lastOverlay');
+  var namiOverlay = document.getElementById('namiOverlay');
 
   //sets the initial div to small size in viewport
 
-  // changed boxes to voices in html file
-
-  box0.style.transform = 'matrix(0,0,0,0,0,0)';
-  box2.style.transform = 'matrix(0,0,0,0,0,0)';
-  box3.style.transform = 'matrix(0,0,0,0,0,0)';
-
   // (initial (init) values go in css, changes go in the js)
-  // box4.style.visibility = 'hidden';
-  // box5.style.visibility = 'hidden';
-  // box6.style.visibility = 'hidden';
-  // box7.style.visibility = 'hidden';
-  // box8.style.visibility = 'hidden';
-  // box9.style.visibility = 'hidden';
-  // box10.style.visibility = 'hidden';
-  // box11.style.visibility = 'hidden';
-  // box12.style.visibility = 'hidden';
-  // box13.style.visibility = 'hidden';
-  // box14.style.visibility = 'hidden';
-  // box14.style.height = '0';
 
   // anonymous function
 
