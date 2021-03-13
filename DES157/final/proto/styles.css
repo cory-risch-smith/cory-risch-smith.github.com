@@ -29,6 +29,16 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
+/* Used to take out of the flow of the doc.  */
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 header {
   text-align: center;
   margin-top: 25px;
@@ -46,6 +56,8 @@ article {
   height: 1000px;
   width: 100%;
 }
+
+/* boxes */
 
 .box {
   display: flex;
@@ -70,53 +82,11 @@ article {
   transition-timing-function: all ease;
 }
 
-/******* Voices ********/
-
-.voices {
-  display: flex;
-  font-family: 'Almarai', sans-serif;
-  font-size: 165px;
-  color: rgb(211, 211, 211);
-  /* Do I really need this? */
-  transition-duration: all 4s ease;
-}
-
-/* Each voice has different flex positioning */
-
 #box0 {
   border-radius: 100%;
 }
 
-#voice1,
-#voice2,
-#voice3 {
-  display: none;
-  margin: 0 auto;
-}
-
-#v0 {
-  grid-column: 2;
-  grid-row: 1;
-  align-items: flex-start;
-}
-
-#v2 {
-  grid-column: 2/2;
-  grid-row: 2/2;
-  align-items: center;
-}
-
-#voice3 {
-  font-family: 'Almarai', sans-serif;
-  color: rgb(255, 252, 236);
-  display: flex;
-  font-size: 165px;
-  grid-column: 2/3;
-  grid-row: 3;
-  align-items: flex-end;
-}
-
-#box2 {
+#box1 {
   position: fixed;
   top: 0;
   left: 0;
@@ -127,7 +97,7 @@ article {
   background-color: #212121;
 }
 
-#box3 {
+#box2 {
   position: fixed;
   top: 0;
   left: 0;
@@ -140,7 +110,7 @@ article {
   justify-content: center;
 }
 
-#box4 {
+#box3 {
   height: 100%;
   display: flex;
   position: absolute;
@@ -156,14 +126,9 @@ article {
   background-color: #212121;
 }
 
-#box4 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
 /* Look to Box 5 to be one of the leaders in styling */
 
-#box5 {
+#box4 {
   display: flex;
   position: absolute;
   height: 100%;
@@ -177,9 +142,19 @@ article {
   background-color: #212121;
 }
 
-#box5 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
+#box5 {
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 35px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #212121;
 }
 
 #box6 {
@@ -197,11 +172,6 @@ article {
   background-color: #212121;
 }
 
-#box6 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
 #box7 {
   height: 100%;
   display: flex;
@@ -215,11 +185,6 @@ article {
   text-align: center;
   align-items: center;
   background-color: #212121;
-}
-
-#box7 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
 }
 
 #box8 {
@@ -237,11 +202,6 @@ article {
   background-color: #212121;
 }
 
-#box8 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
 #box9 {
   height: 100%;
   display: flex;
@@ -255,11 +215,6 @@ article {
   text-align: center;
   align-items: center;
   background-color: #212121;
-}
-
-#box9 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
 }
 
 #box10 {
@@ -277,15 +232,11 @@ article {
   background-color: #212121;
 }
 
-#box10 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
 #box11 {
   height: 100%;
   display: flex;
   position: absolute;
+  left: 0;
   left: 0;
   font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
@@ -297,16 +248,12 @@ article {
   background-color: #212121;
 }
 
-#box11 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
 #box12 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
   height: 100%;
-  display: flex;
   position: absolute;
-  left: 0;
   left: 0;
   font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
@@ -319,35 +266,13 @@ article {
 }
 
 #box12 > h2 {
-  width: 50ch;
-  font-size: 50px !important;
-}
-
-#box13 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  height: 100%;
-  position: absolute;
-  left: 0;
-  font-family: 'Almarai', sans-serif;
-  color: rgb(211, 211, 211);
-  font-size: 35px;
-  transition-duration: all 4s ease;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #212121;
-}
-
-#box13 > h2 {
   grid-column: 2;
   grid-row: 1;
   width: 50ch;
   font-size: 50px !important;
 }
 
-#box13 > button {
+#box12 > button {
   grid-column: 2;
   grid-row: 2;
   padding: 20px;
@@ -355,75 +280,61 @@ article {
   outline: none;
 }
 
-#box13 > button:hover {
+#box12 > button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 26px 0px rgb(251, 252, 255);
   outline: none;
 }
 
-#box13 > footer {
+#box12 > footer {
   font-size: 16px;
   grid-column: 2;
   grid-row: 3;
 }
 
-#box13 > footer > p > a {
+#box12 > footer > p > a {
   text-decoration: none;
   color: aliceblue;
 }
 
-#box13 > footer > p > a:hover {
+#box12 > footer > p > a:hover {
   color: rgb(0, 85, 205);
 }
 
-/**************** Last Overlay ***************/
+/******* Voices ********/
 
-#box14 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  position: absolute;
-  top: 43000px;
-  height: 100%;
-  left: 0;
+.voices {
+  display: flex;
   font-family: 'Almarai', sans-serif;
+  font-size: 165px;
   color: rgb(211, 211, 211);
-  font-size: 35px;
+  /* Do I really need this? */
   transition-duration: all 4s ease;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #212121;
-  max-width: 1366px;
-  z-index: 1;
 }
 
-#box14 > h1 {
+/* Each voice has different flex positioning */
+
+#v0 {
   grid-column: 2;
   grid-row: 1;
-  width: 100%;
+  align-items: flex-start;
 }
 
-#box14 > main {
-  grid-column: 2;
-  grid-row: 2;
-  display: flex;
-  flex: 100%;
-  margin: auto;
-  max-width: 1366px;
-  width: 60ch;
-  padding-left: 375px;
-  padding-right: 375px;
+#v2 {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  align-items: center;
 }
 
-#box14 > footer {
-  grid-column: 2;
+#v3 {
+  grid-column: 2/3;
   grid-row: 3;
+  align-items: flex-end;
 }
 
-#box14 > footer > p > a {
-  color: black;
-  text-decoration: none;
+h2 {
+  width: 50ch;
+  font-size: 50px !important;
 }
 
 footer {
@@ -450,6 +361,56 @@ footer {
   color: black;
 }
 
+/**************** Last Overlay ***************/
+
+#box13 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  position: absolute;
+  top: 43000px;
+  height: 100%;
+  left: 0;
+  font-family: 'Almarai', sans-serif;
+  color: rgb(211, 211, 211);
+  font-size: 35px;
+  transition-duration: all 4s ease;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #212121;
+  max-width: 1366px;
+  z-index: 1;
+}
+
+#box13 > h1 {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+}
+
+#box13 > main {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  flex: 100%;
+  margin: auto;
+  max-width: 1366px;
+  width: 60ch;
+  padding-left: 375px;
+  padding-right: 375px;
+}
+
+#box13 > footer {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#box13 > footer > p > a {
+  color: black;
+  text-decoration: none;
+}
+
 /*********** To be assigned using JS ***********/
 
 .hidden {
@@ -468,6 +429,7 @@ footer {
 .vertical {
   left: 0;
   z-index: 1;
+  /* think about adjusting the height for the vertical scroll here  */
   height: 2000px;
 }
 
