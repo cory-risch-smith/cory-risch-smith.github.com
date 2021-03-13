@@ -5,6 +5,8 @@
   // Update numbers, starting from 0, 1, 2, 3 ...
 
   // try using the querySelectorAll method
+  var boxes = document.querySelectorAll('.box');
+
   var box0 = document.getElementById('box0');
   var box2 = document.getElementById('box2');
   var box3 = document.getElementById('box3');
@@ -19,9 +21,9 @@
   var box12 = document.getElementById('box12');
   var box13 = document.getElementById('box13');
   var box14 = document.getElementById('box14');
-  var voice1 = document.getElementById('voice1');
-  var voice2 = document.getElementById('voice2');
-  var voice3 = document.getElementById('voice3');
+  var v0 = document.getElementById('v0');
+  var v1 = document.getElementById('v1');
+  var v2 = document.getElementById('v2');
   var finalBtn = document.getElementById('finalBtn');
   var lastOverlay = document.getElementById('lastOverlay');
 
@@ -79,7 +81,7 @@
 
       box0.style.zIndex = '1';
 
-      voice1.style.opacity = `${myScale * 0.5}`;
+      v0.style.opacity = `${myScale * 0.5}`;
     }
 
     // Handles 2nd div
@@ -99,43 +101,9 @@
 
       box2.style.zIndex = '1';
 
-      voice1.style.visibility = 'hidden';
-      voice2.style.visibility = 'visible';
-      voice2.style.opacity = `${myScale * 0.5}`;
-
-      if (scrollPos === 10500) {
-        voice2.style.opacity = '0.95';
-      } else if (scrollPos === 10600) {
-        voice2.style.opacity = '0.85';
-      } else if (scrollPos === 10700) {
-        voice2.style.opacity = '0.75';
-      } else if (scrollPos === 10800) {
-        voice2.style.opacity = '0.65';
-      } else if (scrollPos === 10900) {
-        voice2.style.opacity = '0.55';
-      } else if (scrollPos === 11000) {
-        voice2.style.opacity = '0.5';
-      } else if (scrollPos === 11100) {
-        voice2.style.opacity = '0.45';
-      } else if (scrollPos === 11200) {
-        voice2.style.opacity = '0.4';
-      } else if (scrollPos === 11300) {
-        voice2.style.opacity = '0.35';
-      } else if (scrollPos === 11400) {
-        voice2.style.opacity = '0.3';
-      } else if (scrollPos === 11500) {
-        voice2.style.opacity = '0.25';
-      } else if (scrollPos === 11600) {
-        voice2.style.opacity = '0.2';
-      } else if (scrollPos === 11700) {
-        voice2.style.opacity = '0.15';
-      } else if (scrollPos === 11800) {
-        voice2.style.opacity = '0.1';
-      } else if (scrollPos === 11900) {
-        voice2.style.opacity = '0.05';
-      } else if (scrollPos === 12000) {
-        voice2.style.opacity = '0';
-      }
+      v0.style.visibility = 'hidden';
+      v1.style.visibility = 'visible';
+      v1.style.opacity = `${myScale * 0.5}`;
     }
     // Handles 3rd div
     else if (scrollPos >= 12001 && scrollPos <= 24000) {
@@ -154,8 +122,8 @@
 
       box3.style.zIndex = '1';
 
-      voice2.style.visibility = 'hidden';
-      voice3.style.visibility = 'visible';
+      v1.style.visibility = 'hidden';
+      v2.style.visibility = 'visible';
       box4.style.visibility = 'hidden';
     }
 
