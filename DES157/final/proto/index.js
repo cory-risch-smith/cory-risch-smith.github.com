@@ -18,18 +18,9 @@
 
   // (initial (init) values go in css, changes go in the js)
 
-  // anonymous function
-
-  overlayBtn.addEventListener('click', function () {
-    overlay.className = 'box hidden';
-    overlay.style.width = '0px';
-    overlay.style.height = '0px';
-    alert(
-      'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
-    );
-  });
-
   // named callback function
+
+  // ********************* Change all the boxes from visibility hidden and showing to show and hide
 
   window.addEventListener('scroll', scrollFunction);
 
@@ -39,7 +30,6 @@
 
     // Handles 1st div
     if (scrollPos >= 0 && scrollPos <= 6000) {
-      box0.style.visibility = 'visible';
 
       var myScale = scrollPos / 1000;
       // console.log(myScale);

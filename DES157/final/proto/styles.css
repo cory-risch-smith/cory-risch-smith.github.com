@@ -51,10 +51,9 @@ article {
 
 .box {
   display: flex;
-  position: absolute;
+  position: fixed;
   transform: translate3d(0px, 0px, 0px);
   width: 100%;
-
   /* Does it need to be 1000? */
   height: 1000px;
   top: 0;
