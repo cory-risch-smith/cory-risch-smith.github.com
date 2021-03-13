@@ -51,33 +51,29 @@
       boxes[1].classList.add('show');
 
       myScale = scrollPos / 1000 - 3;
-
       // console.log(myScale);
 
       // As matrix comes in, fade opacity of previous text
-      v0.style.opacity = `${1 - myScale * 2.5}`;
+      v0.style.opacity = `${1 - myScale * 1.5}`;
 
       boxes[1].style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
       v1.style.opacity = `${myScale * 0.5}`;
     }
     // Handles 3rd div
-    else if (scrollPos >= 3001 && scrollPos <= 24000) {
+    else if (scrollPos >= 6001 && scrollPos <= 9000) {
       boxes[1].classList.add('hide');
       boxes[2].classList.add('show');
-      myScale = scrollPos / 1000 - 3;
+      myScale = scrollPos / 1000 - 6;
 
-      // console.log(myScale);
+      v1.style.opacity = `${1 - myScale * 1.5}`;
+      boxes[2].style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
-      boxes[2].style.transform = `matrix(${myScale / 10},0,0,${myScale / 10},${
-        myScale / 10
-      },${myScale / 10})`;
-
-      boxes[2].style.opacity = `${myScale}`;
+      v2.style.opacity = `${myScale}`;
     }
 
     // Handles 4th div, Vertical Scroll
-    else if (scrollPos >= 24001 && scrollPos <= 44000) {
+    else if (scrollPos >= 9001 && scrollPos <= 44000) {
       voice3.style.visibility = 'hidden';
       box3.style.visibility = 'hidden';
       box4.style.visibility = 'visible';
