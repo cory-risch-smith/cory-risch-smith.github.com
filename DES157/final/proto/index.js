@@ -42,7 +42,6 @@
       boxes[0].style.transform = `matrix(${myScale},0,0,${myScale},${myScale},${myScale})`;
 
       v0.style.opacity = `${myScale}`;
-      boxes[0].classList.add('show');
     }
 
     // Handles 2nd Voice
@@ -75,38 +74,15 @@
     }
 
     // Handles 4th div, Vertical Scroll
-    else if (scrollPos >= 8501 && scrollPos <= 44000) {
-      for (i = 3; i < voices.length; i++) {
-        boxes[i].classList.add('show');
-      }
-
+    else if (scrollPos >= 9001 && scrollPos <= 30000) {
+      myScale = scrollPos / 1000 - 9;
       // Changes opacity of main message (word:depression)
-      v1.style.opacity = `${1 - myScale * 1.5}`;
+      v2.style.opacity = `${1 - myScale * 1.5}`;
 
       for (i = 3; i > boxes.length; i++) {
         boxes[i].classList.add('show');
       }
 
-      box3.style.top = '10500px';
-
-      box4.style.top = '12500px';
-
-      box5.style.top = '14500px';
-
-      box6.style.top = '16500px';
-
-      box7.style.top = '18500px';
-
-      box8.style.top = '20500px';
-
-      box9.style.top = '22500px';
-
-      box10.style.top = '24500px';
-
-      box11.style.top = '26500px';
-
-      box12.style.top = '28500px';
-      box12.style.height = '768px';
     }
   }
 

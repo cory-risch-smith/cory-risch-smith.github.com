@@ -25,7 +25,7 @@ body {
   font-family: 'Almarai', sans-serif;
   margin: 0 auto;
   position: relative;
-  height: 43000px;
+  height: 30000px;
   background-color: rgb(33, 33, 33);
 }
 
@@ -43,7 +43,7 @@ main {
 
 article {
   position: absolute;
-  height: 1000px;
+  height: 1050px;
   width: 100%;
 }
 
@@ -82,22 +82,62 @@ h2 {
   transform: matrix(0, 0, 0, 0, 0, 0);
 }
 
-/* Look into having to be placed at different top positions? */
+/* Individual top placements for boxes */
 
-#box3 {
-  height: 100%;
+#box3,
+#box4,
+#box5,
+#box6,
+#box7,
+#box8,
+#box9,
+#box10,
+#box11,
+#box12 {
   display: flex;
   position: absolute;
-  top: 20000px;
   left: 0;
-  font-family: 'Almarai', sans-serif;
-  color: rgb(211, 211, 211);
-  font-size: 35px;
-  transition-duration: all 4s ease;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #212121;
+}
+
+#box3 {
+  top: 10500px;
+}
+
+#box4 {
+  top: 11550px;
+}
+
+#box5 {
+  top: 12600px;
+}
+
+#box6 {
+  top: 13650px;
+}
+
+#box7 {
+  top: 14700px;
+}
+
+#box8 {
+  top: 15750px;
+}
+
+#box9 {
+  top: 16800px;
+}
+
+#box10 {
+  top: 17850px;
+}
+
+#box11 {
+  top: 18900px;
+}
+
+#box12 {
+  top: 18950px;
+  height: 768px;
 }
 
 /* These h2's will have different flex positions */
