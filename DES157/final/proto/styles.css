@@ -312,12 +312,10 @@ footer {
 .vertical {
   left: 0;
   z-index: 1;
-  /* think about adjusting the height for the vertical scroll here  */
-  height: 2000px;
 }
 
 .fadeIn {
-  animation: fadeIn ease 10s;
+  animation: fadeIn ease 4s;
 }
 @keyframes fadeIn {
   0% {
@@ -329,7 +327,7 @@ footer {
 }
 
 .fadeOut {
-  animation: fadeOut ease 1.5s;
+  animation: fadeOut ease 4s;
 }
 
 @keyframes fadeOut {

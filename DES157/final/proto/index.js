@@ -73,16 +73,53 @@
       v2.style.opacity = `${myScale}`;
     }
 
+    // ************       FIX ME (Vertical scroll fade)      *****************
+
     // Handles 4th div, Vertical Scroll
     else if (scrollPos >= 9001 && scrollPos <= 30000) {
       myScale = scrollPos / 1000 - 9;
       // Changes opacity of main message (word:depression)
       v2.style.opacity = `${1 - myScale * 1.5}`;
+      v3.style.opacity = `${myScale * 0.9}`;
+
+      // Fading for vertical scroll section
+      if (scrollPos === 9800) {
+        v3.style.opacity = `${myScale * 0.25}`;
+      } else if (scrollPos === 10200) {
+        v2.style.opacity = '0.85';
+      } else if (scrollPos === 10700) {
+        v2.style.opacity = '0.75';
+      } else if (scrollPos === 10800) {
+        v2.style.opacity = '0.65';
+      } else if (scrollPos === 10900) {
+        v2.style.opacity = '0.55';
+      } else if (scrollPos === 11000) {
+        v2.style.opacity = '0.5';
+      } else if (scrollPos === 11100) {
+        v2.style.opacity = '0.45';
+      } else if (scrollPos === 11200) {
+        v2.style.opacity = '0.4';
+      } else if (scrollPos === 11300) {
+        v2.style.opacity = '0.35';
+      } else if (scrollPos === 11400) {
+        v2.style.opacity = '0.3';
+      } else if (scrollPos === 11500) {
+        v2.style.opacity = '0.25';
+      } else if (scrollPos === 11600) {
+        v2.style.opacity = '0.2';
+      } else if (scrollPos === 11700) {
+        v2.style.opacity = '0.15';
+      } else if (scrollPos === 11800) {
+        v2.style.opacity = '0.1';
+      } else if (scrollPos === 11900) {
+        v2.style.opacity = '0.05';
+      } else if (scrollPos === 12000) {
+        v2.style.opacity = '0';
+      }
 
       for (i = 3; i > boxes.length; i++) {
         boxes[i].classList.add('show');
       }
-
     }
   }
 
