@@ -44,14 +44,6 @@
     box14.style.visibility = 'hidden';
     box14.style.height = '0';
 
-    overlayBtn.addEventListener('click', function () {
-      overlay.className = 'box hidden';
-      overlay.style.width = '0px';
-      overlay.style.height = '0px';
-      alert(
-        'Welcome! \n\n 1. Click through Greeting Screen \n 2. Scroll until final button is reached. \n 3. Click Final Button. \n \n Thank you for particpating in this simulation. '
-      );
-    });
 
     window.addEventListener('scroll', function () {
       scrollPos = [window.scrollY];

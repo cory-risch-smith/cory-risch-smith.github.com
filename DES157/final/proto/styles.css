@@ -16,47 +16,6 @@ font-family: 'Stick', sans-serif;
 
 */
 
-/* Hidden and showing classes */
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
-}
-
-.showing {
-  visibility: visible;
-  opacity: 1;
-  height: 100vh;
-  z-index: 100;
-}
-
-/* Possibly use this for scroll opacity fade in and out */
-
-.fadeIn {
-  animation: fadeIn ease 10s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fadeOut {
-  animation: fadeOut ease 1.5s;
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -70,12 +29,14 @@ body {
   background-color: rgb(33, 33, 33);
 }
 
+header {
+  text-align: center;
+  margin-top: 25px;
+}
+
 .animationWrapper {
   position: relative;
   height: 100vh;
-}
-
-#wrapper > p {
   text-align: center;
   color: aliceblue;
 }
@@ -84,43 +45,6 @@ section {
   position: absolute;
   height: 1000px;
   width: 100%;
-}
-
-#overlay {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
-  height: 100%;
-  text-align: center;
-  background-color: whitesmoke;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-
-#overlay > h1 {
-  font-size: 100px;
-  width: 100%;
-  grid-column: 2/2;
-  grid-row: 1;
-}
-
-#overlay > h2 {
-  font-size: 100px;
-  width: 100%;
-  grid-column: 2/2;
-  grid-row: 2;
-  margin-top: 20px;
-}
-
-#overlay > button {
-  font-size: 100px;
-  width: fit-content;
-  margin: auto;
-  margin-top: 20px;
-  grid-column: 2/2;
-  grid-row: 3;
 }
 
 .box {
@@ -519,10 +443,48 @@ footer {
   color: black;
 }
 
-/* To be assigned using JS */
+/*********** To be assigned using JS ***********/
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.showing {
+  visibility: visible;
+  opacity: 1;
+  height: 100vh;
+  z-index: 100;
+}
 
 .vertical {
   left: 0;
   z-index: 1;
   height: 2000px;
+}
+
+.fadeIn {
+  animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut ease 1.5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
