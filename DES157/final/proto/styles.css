@@ -218,8 +218,19 @@ h2 {
 #namiOverlay {
   display: flex;
   flex-wrap: wrap;
-  background-color: whitesmoke;
-  color: black;
+  background: #00467f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #a5cc82,
+    #00467f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #a5cc82,
+    #00467f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: rgba(255, 255, 255, 0.893);
   height: 100%;
   z-index: 1;
 }
@@ -235,7 +246,7 @@ h2 {
   border-radius: 100%;
   align-content: start;
   padding-bottom: 45px;
-  color: black;
+  color: rgba(255, 255, 255, 0.893);
   background-color: rgba(0, 0, 0, 0.154);
   width: 45px;
   outline: none;
@@ -245,7 +256,8 @@ h2 {
 }
 
 #namiOverlay > h1 {
-  color: rgb(68, 127, 210);
+  color: rgba(255, 255, 255, 0.893);
+
   flex: 100%;
 }
 
@@ -268,7 +280,7 @@ h2 {
 
 .footer > ul > li > a {
   text-decoration: none;
-  color: black;
+  color: rgba(255, 255, 255, 0.893);
   font-size: 22px;
 }
 
