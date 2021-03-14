@@ -188,6 +188,10 @@ h2 {
   justify-content: flex-end;
 }
 
+#v11 {
+  width: 30ch;
+}
+
 #v12 {
   flex: 100%;
   margin-bottom: 125px;
