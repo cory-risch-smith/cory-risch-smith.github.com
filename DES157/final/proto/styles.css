@@ -238,6 +238,10 @@ h2 {
   margin-left: 15px;
   text-decoration: none;
 }
+#closeBtn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.359);
+}
 
 #namiOverlay > h1 {
   color: rgba(255, 255, 255, 0.893);
@@ -266,6 +270,10 @@ h2 {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.893);
   font-size: 22px;
+}
+
+.footer > ul > li > a:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px #a5cc82, 0 0 5px #a5cc82;
 }
 
 /* Used to take out of the flow of the doc.  */
