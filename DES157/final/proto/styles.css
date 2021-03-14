@@ -237,10 +237,13 @@ h2 {
   margin-top: 15px;
   margin-left: 15px;
   text-decoration: none;
+  transition: 2s all;
 }
 #closeBtn:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(133, 0, 0);
   background-color: rgba(0, 0, 0, 0.359);
+  transform: rotate(720deg);
+  transition: 2s all;
 }
 
 #namiOverlay > h1 {
