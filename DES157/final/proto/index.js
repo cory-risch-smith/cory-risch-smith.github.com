@@ -23,8 +23,6 @@
 
   //sets the initial div to small size in viewport
 
-  // (initial (init) values go in css, changes go in the js)
-
   // named callback function
 
   // ********************* Change all the boxes from visibility hidden and showing to show and hide
@@ -123,13 +121,14 @@
       for (i = 3; i > boxes.length; i++) {
         boxes[i].classList.add('show');
       }
+      // namiOverlay.classList.remove('show');
     }
   }
 
   finalBtn.addEventListener('click', function () {
     box12.classList.add('fadeOut');
     box12.classList.add('hide');
-    namiOverlay.style.display = 'block';
+    namiOverlay.classList.add('show');
 
     // **********FIX ME *****************
 
@@ -140,7 +139,7 @@
       'hidden');
   });
 
-  closeBtn.addEventListener('close', function(){
-    //Add some kind of scroll out or fade out and go to home. 
-  })
+  closeBtn.addEventListener('close', function () {
+    //Add some kind of scroll out or fade out and go to home.
+  });
 })();

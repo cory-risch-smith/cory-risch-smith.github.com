@@ -25,7 +25,7 @@ body {
   font-family: 'Almarai', sans-serif;
   margin: 0 auto;
   position: relative;
-  height: 23000px;
+  height: 22500px;
   background-color: rgb(33, 33, 33);
 }
 
@@ -194,13 +194,10 @@ h2 {
 
 /**************** Final NAMI Overlay ***************/
 
-#namiOverlay {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, auto);
+.showNami {
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
-  top: 22800px;
-  height: 100%;
   left: 0;
   font-family: 'Almarai', sans-serif;
   color: rgb(211, 211, 211);
@@ -220,26 +217,13 @@ h2 {
   width: 100%;
 }
 
-#namiOverlay > main {
-  grid-column: 2;
-  grid-row: 2;
-  display: flex;
+#namiOverlay > section {
   flex: 100%;
   margin: auto;
   max-width: 1366px;
   width: 60ch;
   padding-left: 375px;
   padding-right: 375px;
-}
-
-#namiOverlay > footer {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-#namiOverlay > footer > p > a {
-  color: black;
-  text-decoration: none;
 }
 
 /* Used to take out of the flow of the doc.  */
