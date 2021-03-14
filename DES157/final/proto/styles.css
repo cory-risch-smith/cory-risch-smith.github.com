@@ -192,6 +192,10 @@ h2 {
   margin-bottom: 125px;
 }
 
+#v13 {
+  font-size: 85px;
+}
+
 /**************** Final NAMI Overlay ***************/
 
 /* Maybe I don't need this? */
@@ -231,6 +235,7 @@ h2 {
   border-radius: 100%;
   align-content: start;
   padding-bottom: 45px;
+  color: black;
   background-color: rgba(0, 0, 0, 0.154);
   width: 45px;
   outline: none;
@@ -244,12 +249,27 @@ h2 {
   flex: 100%;
 }
 
-#namiOverlay > section {
+#namiOverlay > article {
   margin: auto;
   max-width: 1366px;
-  width: 60ch;
-  padding-left: 375px;
-  padding-right: 375px;
+  width: 40ch;
+  padding-left: 325px;
+  padding-right: 325px;
+  margin-bottom: 150px;
+}
+
+.footer > ul {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: auto;
+  list-style-type: none;
+}
+
+.footer > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
 }
 
 /* Used to take out of the flow of the doc.  */
