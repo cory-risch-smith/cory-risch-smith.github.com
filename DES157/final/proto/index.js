@@ -15,6 +15,7 @@
   var v2 = document.getElementById('v2');
   var finalBtn = document.getElementById('finalBtn');
   var namiOverlay = document.getElementById('namiOverlay');
+  var closeBtn = document.getElementById('closeBtn');
 
   for (i = 0; i < boxes.length; i++) {
     boxes[i].classList.add('hide');
@@ -82,6 +83,8 @@
       v2.style.opacity = `${1 - myScale * 1.5}`;
       v3.style.opacity = `${myScale * 0.9}`;
 
+      // Fix top positioning for windows
+
       // Fading for vertical scroll section
       if (scrollPos === 9800) {
         v3.style.opacity = `${myScale * 0.25}`;
@@ -125,10 +128,9 @@
 
   finalBtn.addEventListener('click', function () {
     box12.classList.add('fadeOut');
-    box12.style.visibility = 'hidden';
-    box13.style.visibility = 'visible';
-    box13.style.display = 'block';
-    box13.style.height = '100%';
+    box12.classList.add('hide');
+    namiOverlay.style.display = 'block';
+
     // **********FIX ME *****************
 
     // remove eventListener here
@@ -137,4 +139,8 @@
     var body = (document.getElementsByTagName('body')[0].style.overflow =
       'hidden');
   });
+
+  closeBtn.addEventListener('close', function(){
+    //Add some kind of scroll out or fade out and go to home. 
+  })
 })();
