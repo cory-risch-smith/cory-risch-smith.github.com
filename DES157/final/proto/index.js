@@ -78,46 +78,12 @@
       v2.style.opacity = `${1 - myScale * 1.5}`;
       v3.style.opacity = `${myScale * 0.9}`;
 
-      // Fix top positioning for windows
-
-      // Fading for vertical scroll section
-      if (scrollPos === 9800) {
-        v3.style.opacity = `${myScale * 0.25}`;
-      } else if (scrollPos === 10200) {
-        v2.style.opacity = '0.85';
-      } else if (scrollPos === 10700) {
-        v2.style.opacity = '0.75';
-      } else if (scrollPos === 10800) {
-        v2.style.opacity = '0.65';
-      } else if (scrollPos === 10900) {
-        v2.style.opacity = '0.55';
-      } else if (scrollPos === 11000) {
-        v2.style.opacity = '0.5';
-      } else if (scrollPos === 11100) {
-        v2.style.opacity = '0.45';
-      } else if (scrollPos === 11200) {
-        v2.style.opacity = '0.4';
-      } else if (scrollPos === 11300) {
-        v2.style.opacity = '0.35';
-      } else if (scrollPos === 11400) {
-        v2.style.opacity = '0.3';
-      } else if (scrollPos === 11500) {
-        v2.style.opacity = '0.25';
-      } else if (scrollPos === 11600) {
-        v2.style.opacity = '0.2';
-      } else if (scrollPos === 11700) {
-        v2.style.opacity = '0.15';
-      } else if (scrollPos === 11800) {
-        v2.style.opacity = '0.1';
-      } else if (scrollPos === 11900) {
-        v2.style.opacity = '0.05';
-      } else if (scrollPos === 12000) {
-        v2.style.opacity = '0';
-      }
-
       for (i = 3; i > boxes.length; i++) {
-        boxes[i].classList.add('show');
-        namiOverlay.classList.remove('show');
+        if (boxes[i] === boxes[boxes.length - 1]) {
+          break;
+        } else {
+          boxes[i].classList.add('show');
+        }
       }
     }
   }
@@ -132,13 +98,13 @@
     window.removeEventListener('scroll', scrollFunction);
     // console.log('removed window scroll event listener');
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-  });
 
-  closeBtn.addEventListener('click', function () {
-    //Add some kind of scroll out or fade out and go to home.
+    closeBtn.addEventListener('click', function () {
+      //Add some kind of scroll out or fade out and go to home.
 
-    namiOverlay.classList.add('fadeOut');
-    document.getElementsByTagName('body')[0].style.overflow = 'visible';
-    setTimeout(refresh, 3050);
+      namiOverlay.classList.add('fadeOut');
+      document.getElementsByTagName('body')[0].style.overflow = 'visible';
+      setTimeout(refresh, 2000);
+    });
   });
 })();
