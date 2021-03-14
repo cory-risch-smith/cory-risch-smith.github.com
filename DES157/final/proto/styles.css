@@ -260,7 +260,7 @@ h2 {
 }
 
 .fadeIn {
-  animation: fadeIn ease 5s;
+  animation: fadeIn ease 7s;
 }
 @keyframes fadeIn {
   0% {
@@ -272,7 +272,7 @@ h2 {
 }
 
 .fadeOut {
-  animation: fadeOut ease 5s;
+  animation: fadeOut ease 3s;
 }
 
 @keyframes fadeOut {

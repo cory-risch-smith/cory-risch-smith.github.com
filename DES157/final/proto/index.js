@@ -2,9 +2,6 @@
   ('use strict');
   var scrollPos = 0;
 
-  // Update numbers, starting from 0, 1, 2, 3 ...
-
-  // try using the querySelectorAll method
   var boxes = document.querySelectorAll('.box');
   console.log(boxes);
 
@@ -25,8 +22,6 @@
 
   // named callback function
 
-  // ********************* Change all the boxes from visibility hidden and showing to show and hide
-
   window.addEventListener('scroll', scrollFunction);
 
   function scrollFunction() {
@@ -44,8 +39,6 @@
     }
 
     // Handles 2nd Voice
-
-    // *******************************************************************change to the text and take opacity off the box and put on the type
     else if (scrollPos >= 3000 && scrollPos <= 6000) {
       // boxes[0].classList.add('hide');
       boxes[1].classList.add('show');
@@ -121,7 +114,7 @@
       for (i = 3; i > boxes.length; i++) {
         boxes[i].classList.add('show');
       }
-      // namiOverlay.classList.remove('show');
+      namiOverlay.classList.remove('show');
     }
   }
 
@@ -130,13 +123,10 @@
     box12.classList.add('hide');
     namiOverlay.classList.add('show');
 
-    // **********FIX ME *****************
-
     // remove eventListener here
     window.removeEventListener('scroll', scrollFunction);
     console.log('removed window scroll event listener');
-    var body = (document.getElementsByTagName('body')[0].style.overflow =
-      'hidden');
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
   });
 
   closeBtn.addEventListener('close', function () {
