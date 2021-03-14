@@ -189,6 +189,7 @@ h2 {
 }
 
 #v11 {
+  line-height: 70px;
   width: 30ch;
 }
 
@@ -263,6 +264,10 @@ h2 {
   padding-left: 325px;
   padding-right: 325px;
   margin-bottom: 150px;
+}
+
+.namiBody {
+  line-height: 65px;
 }
 
 .footer > ul {
