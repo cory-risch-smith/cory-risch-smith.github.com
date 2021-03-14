@@ -194,7 +194,8 @@ h2 {
 
 /**************** Final NAMI Overlay ***************/
 
-.showNami {
+/* Maybe I don't need this? */
+/* .showNami {
   display: flex;
   flex-wrap: wrap;
   position: absolute;
@@ -209,16 +210,21 @@ h2 {
   background-color: #212121;
   max-width: 1366px;
   z-index: 1;
+} */
+
+#namiOverlay {
+  flex-wrap: wrap;
+  background-color: whitesmoke;
+  color: black;
 }
 
 #namiOverlay > h1 {
-  grid-column: 2;
-  grid-row: 1;
-  width: 100%;
+  color: rgb(68, 127, 210);
+
+  flex: 100%;
 }
 
 #namiOverlay > section {
-  flex: 100%;
   margin: auto;
   max-width: 1366px;
   width: 60ch;

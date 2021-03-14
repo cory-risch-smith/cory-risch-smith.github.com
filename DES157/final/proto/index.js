@@ -125,7 +125,7 @@
 
     // remove eventListener here
     window.removeEventListener('scroll', scrollFunction);
-    console.log('removed window scroll event listener');
+    // console.log('removed window scroll event listener');
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
   });
 
