@@ -11,8 +11,12 @@
   var v1 = document.getElementById('v1');
   var v2 = document.getElementById('v2');
   var finalBtn = document.getElementById('finalBtn');
-  var namiOverlay = document.getElementById('namiOverlay');
+  var namiOverlay = document.getElementById('nami');
   var closeBtn = document.getElementById('closeBtn');
+
+  var refresh = function reload() {
+    location.reload();
+  };
 
   for (i = 0; i < boxes.length; i++) {
     boxes[i].classList.add('hide');
@@ -113,8 +117,8 @@
 
       for (i = 3; i > boxes.length; i++) {
         boxes[i].classList.add('show');
+        namiOverlay.classList.remove('show');
       }
-      namiOverlay.classList.remove('show');
     }
   }
 
@@ -122,6 +126,7 @@
     box12.classList.add('fadeOut');
     box12.classList.add('hide');
     namiOverlay.classList.add('show');
+    namiOverlay.setAttribute('id', 'namiOverlay');
 
     // remove eventListener here
     window.removeEventListener('scroll', scrollFunction);
@@ -129,7 +134,11 @@
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
   });
 
-  closeBtn.addEventListener('close', function () {
+  closeBtn.addEventListener('click', function () {
     //Add some kind of scroll out or fade out and go to home.
+
+    namiOverlay.classList.add('fadeOut');
+    document.getElementsByTagName('body')[0].style.overflow = 'visible';
+    setTimeout(refresh, 3050);
   });
 })();

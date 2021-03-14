@@ -198,23 +198,6 @@ h2 {
 
 /**************** Final NAMI Overlay ***************/
 
-/* Maybe I don't need this? */
-/* .showNami {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  left: 0;
-  font-family: 'Almarai', sans-serif;
-  color: rgb(211, 211, 211);
-  font-size: 35px;
-  transition-duration: all 4s ease;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  background-color: #212121;
-  max-width: 1366px;
-} */
-
 #namiOverlay {
   display: flex;
   flex-wrap: wrap;
@@ -318,7 +301,7 @@ h2 {
 }
 
 .fadeIn {
-  animation: fadeIn ease 4s;
+  animation: fadeIn ease 1s;
 }
 @keyframes fadeIn {
   0% {
@@ -330,7 +313,7 @@ h2 {
 }
 
 .fadeOut {
-  animation: fadeOut ease 3s;
+  animation: fadeOut ease 2s;
 }
 
 @keyframes fadeOut {
